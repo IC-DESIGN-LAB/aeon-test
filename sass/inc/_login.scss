@@ -1,13 +1,119 @@
-.login-form {
-  width: 90%;
-  max-width: 640px;
-  text-align: center;
-  margin: 90px auto 0px;
-  border: 2px solid #AE1679;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  padding: 0px 70px;
+.login {
+  height: calc(100vh - 132px);
+  .login-form {
+    width: 90%;
+    max-width: 640px;
+    text-align: center;
+    margin: 0px auto;
+    border: 2px solid #AE1679;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    padding: 40px 0px;
+    .login-header {
+      padding-bottom: 40px;
+      border-bottom: 1px solid #E1E1E1;
+      h2 {
+        font-family: 'KozGoPr6NRegular';
+        font-weight: bold;
+        font-size: 36px;
+        letter-spacing: 0.1em;
+      }
+    }
+    .login-body {
+      padding: 40px 70px 30px;
+      .login-email {
+        label {
+          display: block;
+          text-align: left;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+        }
+        input {
+          display: block;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          width: 100%;
+          max-width: 500px;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          outline: unset;
+          border: unset;
+          border: 1px solid #AE1679;
+          background-color: unset;
+          padding: 0px 10px;
+        }
+      }
+      .login-password {
+        margin-top: 20px;
+        label {
+          display: block;
+          text-align: left;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+        }
+        input {
+          display: block;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          width: 100%;
+          max-width: 500px;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          outline: unset;
+          border: unset;
+          border: 1px solid #AE1679;
+          background-color: unset;
+          padding: 0px 10px;
+        }
+      }
+      .login-submit {
+        color: #ffffff;
+        padding: 15px 60px;
+        font-family: 'KozGoPr6NRegular';
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        background-color: #AE1679;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-top: 30px;
+      }
+    }
+    .login-footer {
+      p {
+        font-family: 'KozGoPr6NRegular';
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        a {
+          color: #AE1679;
+        }
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
 }
