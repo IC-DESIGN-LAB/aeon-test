@@ -106,25 +106,48 @@ div{
   margin-top: -15px;
 }
 .prev-arrow{
-  left: 34%;
+  width: 530px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: -35px;
   z-index: 1;
-  width: 33px;
   height: 33px;
   background-image: url(../img/prev_arrow.svg);
   background-repeat: no-repeat;
+  background-position: center left;
   @media (max-width: 959px){
+    height: 35px;
+    width: 35px;
     left: 5px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-left: 0px;
   }
 }
 .next-arrow{
-  right: 33%;
+  width: 530px;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-left: 35px;
   z-index: 1;
-  width: 33px;
   height: 33px;
   background-image: url(../img/next_arrow.svg);
   background-repeat: no-repeat;
+  background-position: center right;
   @media (max-width: 959px){
+    height: 35px;
+    width: 35px;
     right: 5px;
+    top: 50%;
+    left: unset;
+    transform: translate(0, -50%);
+    margin-left: 0px;
   }
 }
 
