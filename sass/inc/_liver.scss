@@ -53,6 +53,9 @@
                 margin-right: 30px;
                 margin-bottom: 30px;
                 box-shadow: unset;
+                &:last-child {
+                    margin-bottom: 0;
+                }
             }
             &:first-child {
                 @include mqsp {
