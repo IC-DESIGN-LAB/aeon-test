@@ -1,6 +1,9 @@
 .news-subpage {
     width: 90%;
     margin-bottom: 80px;
+    @include mqsp {
+        margin: 50px auto;
+    }
     &-inner {
         padding: 0 20px;
         box-sizing: border-box;
