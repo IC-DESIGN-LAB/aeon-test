@@ -1,0 +1,14 @@
+$enfont: 'Helvetica Neue' , Helvetica , Arial;
+
+@font-face {
+    font-family: 'KozGoPr6NRegular';
+    src: url('../common/font/KozGoPr6NRegular.otf');
+}
+
+body {
+  font-family: 'KozGoPr6NRegular';
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.15em;
+  color: #454545;
+}

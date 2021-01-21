@@ -1,0 +1,23 @@
+body{
+  position: relative;
+}
+.contents{
+  display: flex;
+  width: 100%;
+}
+.contentsAra{
+  width : calc(100% - 250px);
+  margin-top: 90px;
+  margin-left: auto;
+  @include mqsp {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 65px;
+  }
+}
+
+.wapper{
+  max-width: 1280px;
+  width: 100%;
+  margin: 0 auto;
+}

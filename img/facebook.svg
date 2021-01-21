@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="33" viewBox="0 0 32 33">
+  <g id="グループ_302" data-name="グループ 302" transform="translate(-77 -542)">
+    <g id="グループ_106" data-name="グループ 106" transform="translate(76.677 542)">
+      <rect id="長方形_30" data-name="長方形 30" width="32" height="33" rx="7" transform="translate(0.323)" fill="#3b5998"/>
+    </g>
+    <g id="レイヤー_2" data-name="レイヤー 2" transform="translate(88.287 548.631)">
+      <g id="Design">
+        <path id="パス_5" data-name="パス 5" d="M9.74,0H7.307C4.579,0,2.824,1.91,2.824,4.867V7.107H.382a.4.4,0,0,0-.382.4H0v3.251a.4.4,0,0,0,.382.4H2.824v8.209a.4.4,0,0,0,.382.4h3.18a.4.4,0,0,0,.382-.4h0V11.166h2.85a.4.4,0,0,0,.382-.4V7.511a.415.415,0,0,0-.113-.285.371.371,0,0,0-.269-.119H6.769v-1.9c0-.918.209-1.377,1.329-1.377H9.731a.4.4,0,0,0,.382-.4V.4A.4.4,0,0,0,9.74,0Z" fill="#ededed"/>
+      </g>
+    </g>
+  </g>
+</svg>
