@@ -131,6 +131,9 @@
         }
         &-txt {
             margin-bottom: 25px;
+            @include ssp {
+                margin-bottom: 0;
+            }
             &-name {
                 font-size: 14px;
                 color: #959595;
@@ -146,6 +149,11 @@
                 font-weight: 600;
                 @include ssp {
                     font-size: 14px;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
                 }
             }
         }
