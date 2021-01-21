@@ -211,6 +211,99 @@
 }
         }
       }
+      .regi-address-gp {
+        margin-top: 10px;
+      }
+      .regi-street {
+        input {
+          width: 100%;
+        }
+      }
+      .regi-ph {
+        input {
+          width: 100%;
+        }
+      }
+      .regi-email {
+        input {
+          width: 100%;
+          &:last-child {
+            margin-top: 10px;
+          }
+        }
+      }
+      .regi-password {
+        input {
+          width: 100%;
+          &:last-child {
+            margin-top: 10px;
+          }
+        }
+        p {
+          color: #E80F0F;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 500;
+          font-size: 12px;
+          letter-spacing: 0.1em;
+        }
+      }
+      .regi-check {
+        margin-top: 50px;
+        label {
+          margin-left: 25px;
+          position: relative;
+          display: block;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 400;
+          font-size: 14px;
+          letter-spacing: 0.1em;
+          a  {
+            color: #AE1679;
+            font-weight: 500;
+            font-size: 16px;
+          }
+          input[type='checkbox'] {
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            opacity: 0;
+            top: 4px;
+            left: -24px;
+            width: 15px;
+            height: 15px;
+            cursor: pointer;
+            z-index: 1;
+          }
+          .check {
+            position: absolute;
+            top: 3px;
+            left: -25px;
+            height: 15px;
+            width: 15px;
+            border: 1px solid #000000;
+            cursor: pointer;
+            &::after {
+              display: none;
+              content: '';
+              position: absolute;
+              left: 3px;
+              top: -3px;
+              width: 14px;
+              height: 7px;
+              border: solid #000000;
+              border-width: 0 0 2px 2px;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+            }
+          }
+          input[type='checkbox']:checked ~ .check::after {
+            display: block;
+          }
+        }
+      }
     }
     .regi-footer {
 
