@@ -67,7 +67,7 @@
             <h2>会員登録</h2>
           </div>
           <div class="regi-body">
-            <form action="">
+            <form action="" method="post">
               <label for="">お名前 <span>※必須</span></label>
               <div class="regi-name">
                 <input type="text" name="n1" placeholder="田中" class="isPc">
@@ -82,7 +82,12 @@
                 <label> 男性 <input type="radio" name="gender" value="男性" checked> <span class="checkmark"></span></label>
                 <label> 女性 <input type="radio" name="gender" value="女性"> <span class="checkmark"></span></label>
               </div>
-
+              <label for="">生年月日<span>※必須</span></label>
+              <div class="regi-birthday">
+                <select name="bd-year" id="bd-year"></select>
+                <select name="bd-month" id="bd-month"></select>
+                <select name="bd-day" id="bd-day"></select>
+              </div>
             </form>
           </div>
           <div class="regi-footer"></div>
@@ -118,6 +123,79 @@
   </footer>
   <script src="slick/slick.min.js"></script>
   <script src="js/app.js"></script>
+  <script>
+
+    let selectYearEle = '';
+    let selectMonthEle = '';
+    let selectDayEle = '';
+    let bdYearStart = 1991;
+    let bdYearEnd = new Date().getFullYear();
+    let htmlFormatY = '';
+    let htmlFormatM = '';
+    let htmlFormatD = '';
+
+    $(document).ready(function () {
+
+      selectYearEle = document.getElementById('bd-year');
+      selectMonthEle = document.getElementById('bd-month');
+      selectDayEle = document.getElementById('bd-day');
+
+      getBdYears();
+      getBdMonths();
+      getBdDays();
+
+      $('#bd-year').on('change', function () {
+        getBdDays();
+      });
+
+      $('#bd-month').on('change', function () {
+        getBdDays();
+      });
+
+    });
+
+    function getBdYears() {
+      if (selectYearEle != null) {
+        for (let y = bdYearStart; y <= bdYearEnd; y++) {
+          htmlFormatY += '<option value="' + y + '">' + y + ' 年</option>';
+        }
+        selectYearEle.innerHTML = htmlFormatY;
+        selectYearEle.children[0].setAttribute("selected", "");
+      }
+    }
+
+    function getBdMonths() {
+      if (selectMonthEle != null) {
+        htmlFormatM = '';
+        for (let m = 1; m <= 12; m++) {
+          if (m < 10) {
+            htmlFormatM += '<option value="0' + m + '">0' + m + '</option>';
+          } else {
+            htmlFormatM += '<option value="' + m + '">' + m + '</option>';
+          }
+        }
+        selectMonthEle.innerHTML = htmlFormatM;
+        selectMonthEle.children[0].setAttribute("selected", "");
+      }
+    }
+
+    function getBdDays() {
+      if (selectDayEle != null) {
+        let dates = new Date(selectYearEle.value, selectMonthEle.value, 0).getDate();
+        htmlFormatD = '';
+        for (let d = 1; d <= dates; d++) {
+          if (d < 10) {
+            htmlFormatD += '<option value="0' + d + '">0' + d + '</option>';
+          } else {
+            htmlFormatD += '<option value="' + d + '">' + d + '</option>';
+          }
+        }
+        selectDayEle.innerHTML = htmlFormatD;
+        console.log(selectYearEle.value);
+      }
+    }
+
+  </script>
 
 </body>
 
