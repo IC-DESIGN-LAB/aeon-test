@@ -1,5 +1,5 @@
 .login {
-  height: calc(100vh - 132px);
+  // height: calc(100vh - 132px);
   .login-form {
     width: 90%;
     max-width: 640px;
@@ -12,6 +12,9 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     padding: 40px 0px;
+    @include mqsp {
+      margin-top: 70px;
+    }
     .login-header {
       padding-bottom: 40px;
       border-bottom: 1px solid #E1E1E1;
@@ -23,7 +26,10 @@
       }
     }
     .login-body {
-      padding: 40px 70px 30px;
+      padding: 30px 70px;
+      @include mqsp {
+        padding: 30px 20px;
+      }
       .login-email {
         label {
           display: block;
@@ -52,6 +58,10 @@
           border: 1px solid #AE1679;
           background-color: unset;
           padding: 0px 10px;
+          box-sizing: border-box;
+          @include mqsp {
+            border-color: #C1C1C1;
+          }
         }
       }
       .login-password {
@@ -80,9 +90,10 @@
           -webkit-border-radius: 5px;
           outline: unset;
           border: unset;
-          border: 1px solid #AE1679;
+          border: 1px solid #C1C1C1;
           background-color: unset;
           padding: 0px 10px;
+          box-sizing: border-box;
         }
       }
       .login-submit {
