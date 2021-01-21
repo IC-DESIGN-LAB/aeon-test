@@ -1,8 +1,7 @@
 .liver {
     width: 90%;
-    margin-bottom: 80px;
     @include mqsp {
-        margin: 50px auto;
+        margin: 0 auto 150px;
     }
     &-detail {
         width: 90%;
