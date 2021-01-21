@@ -50,12 +50,6 @@
                 color: #383838;
                 font-size: 16px;
                 font-weight: 600;
-                @media (max-width: 620px) {
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                    font-size: 14px;
-                }
                 &:after {
                     @media (max-width: 620px) {
                         content: '';
@@ -69,6 +63,19 @@
                         border-color: #383838;
                         display: block;
                         transform: rotate(45deg);
+                    }
+                }
+                a {
+                    @media (max-width: 620px) {
+                        display: block;
+                        width: 350px;
+                        height: 45px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        font-size: 14px;
+                    }
+                    @media (max-width: 400px) {
+                        width: 270px;
                     }
                 }
             }
