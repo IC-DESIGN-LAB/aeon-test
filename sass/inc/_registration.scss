@@ -3,7 +3,6 @@
   .regi-form {
     width: 90%;
     max-width: 640px;
-    text-align: center;
     margin: 0px auto;
     border: 2px solid #AE1679;
     border-radius: 5px;
@@ -19,6 +18,7 @@
       padding-bottom: 30px;
       border-bottom: 1px solid #E1E1E1;
       h2 {
+        text-align: center;
         font-family: 'KozGoPr6NRegular';
         font-weight: bold;
         font-size: 36px;
@@ -34,9 +34,13 @@
         display: block;
         text-align: left;
         font-family: 'KozGoPr6NRegular';
-        font-weight: bold;
+        font-weight: 500;
         font-size: 20px;
         letter-spacing: 0.1em;
+        margin-top: 30px;
+        &:first-child {
+          margin-top: 0px;
+        }
         span {
           color: #AE1679;
           font-size: 12px;
@@ -74,6 +78,52 @@
           }
           @include mqsp {
             width: 100%;
+          }
+        }
+      }
+      .regi-gender {
+        label {
+          position: relative;
+          display: inline-block;
+          margin-top: 10px;
+          width: 80px;
+          margin-right: 30px;
+          text-align: right;
+          .checkmark {
+            position: absolute;
+            top: 7px;
+            left: 0px;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #C1C1C1;
+            border-radius: 50%;
+            &::after {
+              display: none;
+              content: "";
+              position: absolute;
+              top: 2px;
+              left: 2px;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              -webkit-border-radius: 50%;
+              -moz-border-radius: 50%;
+              -ms-border-radius: 50%;
+              -o-border-radius: 50%;
+              background-color: #AE1679;
+            }
+          }
+        }
+        input[type='radio'] {
+          margin: 0px;
+          padding: 0px;
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+        }
+        input[type='radio']:checked ~ .checkmark {
+          &::after {
+            display: block;
           }
         }
       }
