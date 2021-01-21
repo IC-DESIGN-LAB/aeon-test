@@ -26,7 +26,30 @@
       }
     }
     .regi-body {
-
+      padding: 30px 70px;
+      @include mqsp {
+        padding: 30px 20px;
+      }
+      label {
+        display: block;
+        text-align: left;
+        font-family: 'KozGoPr6NRegular';
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        span {
+          color: #AE1679;
+          font-size: 12px;
+        }
+      }
+      .regi-name {
+        input {
+          font-family: 'KozGoPr6NRegular';
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+        }
+      }
     }
     .regi-footer {
 
