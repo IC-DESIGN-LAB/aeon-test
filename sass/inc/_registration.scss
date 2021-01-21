@@ -46,7 +46,8 @@
           font-size: 12px;
         }
       }
-      input {
+      input, select {
+        color: #C1C1C1;
         font-family: 'KozGoPr6NRegular';
         font-weight: 500;
         font-size: 16px;
@@ -63,6 +64,9 @@
         padding: 10px 10px;
         box-sizing: border-box;
         margin-top: 15px;
+      }
+      select {
+        height: 50px;
       }
       .regi-name {
         display: flex;
@@ -124,6 +128,28 @@
         input[type='radio']:checked ~ .checkmark {
           &::after {
             display: block;
+          }
+        }
+      }
+      .regi-birthday {
+        display: flex;
+        flex-wrap: wrap;
+        select {
+          width: calc(33.33% - 13.33px);
+          @include mqsp {
+            width: calc(50% - 10px);
+          }
+          &:first-child {
+            @include mqsp {
+              width: 100%;
+            }
+          }
+          &:nth-child(2) {
+            margin-left: 20px;
+            margin-right: 20px;
+            @include mqsp {
+              margin-left: 0px;
+            }
           }
         }
       }
