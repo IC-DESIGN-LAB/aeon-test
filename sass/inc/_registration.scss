@@ -42,12 +42,39 @@
           font-size: 12px;
         }
       }
+      input {
+        font-family: 'KozGoPr6NRegular';
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        outline: unset;
+        border: unset;
+        border: 1px solid #C1C1C1;
+        padding: 10px 10px;
+        box-sizing: border-box;
+        margin-top: 15px;
+      }
       .regi-name {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         input {
-          font-family: 'KozGoPr6NRegular';
-          font-weight: 500;
-          font-size: 16px;
-          letter-spacing: 0.1em;
+          width: calc(50% - 7.5px);
+          &:last-child {
+            border-color: #AE1679;
+            @include mqsp {
+              border-color: #C1C1C1;
+            }
+          }
+          @include mqsp {
+            width: 100%;
+          }
         }
       }
     }
