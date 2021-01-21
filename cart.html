@@ -4,10 +4,9 @@
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
-
     <meta name="robots" content="noindex" />
-    <title>aeon-test</title>
 
+    <title>aeon-test</title>
     <!-- <meta name="msapplication-square70x70logo" content="img/common/site-tile-70x70.png">
   <meta name="msapplication-square150x150logo" content="img/common/site-tile-150x150.png">
   <meta name="msapplication-wide310x150logo" content="img/common/site-tile-310x150.png">
@@ -49,9 +48,9 @@
   <link rel="icon" type="image/png" sizes="512x512" href="img/common/icon-512x512.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/common/icon-16x16.png">
   <link rel="icon" type="image/png" sizes="24x24" href="img/common/icon-24x24.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/common/icon-32x32.png"> -->
-
-    <!-- <meta name="description" content="2016年FWで休止していた「LE SOUK」が「大人の女性」に向け、ライフスタイルの変化に寄り添う、「LE SOUK HOLIDAY」に生まれ変わりました。クロスプラス株式会社から2021年2月に展開されます。">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/common/icon-32x32.png">
+  
+  <meta name="description" content="2016年FWで休止していた「LE SOUK」が「大人の女性」に向け、ライフスタイルの変化に寄り添う、「LE SOUK HOLIDAY」に生まれ変わりました。クロスプラス株式会社から2021年2月に展開されます。">
   <meta name="Keywords" content="LE SOUK（ルスーク）,冨張愛（とみはりめぐみ）,30（40）代 ファッション,通勤服（OL服）（オンオフ着回し）">
   <meta property="og:url" content="https://lesoukholiday.jp/">
   <meta property="og:type" content="website">
@@ -59,14 +58,18 @@
   <meta property="og:description" content="2016年FWで休止していた「LE SOUK」が「大人の女性」に向け、ライフスタイルの変化に寄り添う、「LE SOUK HOLIDAY」に生まれ変わりました。クロスプラス株式会社から2021年2月に展開されます。">
   <meta property="og:site_name" content="LE SOUK HOLIDAY | ルスーク ホリデイ 2021年2月9日ECサイトオープン！" />
   <meta property="og:image" content="https://lesoukholiday.jp/img/ogp.png"> -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.min.css" />
+    <link rel="stylesheet" href="slick/slick-theme.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/common.js"></script>
+
 </head>
 
 <body>
-    <header class="header">
+    <header id="header" class="header">
         <div class="header-left">
             <h1 class="header-logo"><img src="img/logo.svg" alt=""></h1>
             <nav class="header-menu">
@@ -111,7 +114,26 @@
     </header>
     <main>
         <div class="contentsAra">
-            <h2 class="a">Sample Text</h2>
+            <section class="cart">
+                <div class="cart-inner">
+                    <h2 class="cart-title">カート</h2>
+                    <div class="cart-total">
+                        <p class="cart-amount"><span>カートの合計金額は</span>￥24,000<span class="cart-tax"> （税込）</span></p>
+                        <a href="#" class="btn">決済に進む</a>
+                    </div>
+                    <div class="cart-list">
+                        <div class="cart-item">
+                            <figure class="cart-img">
+                                <img src="img/cart-img01.png" alt="カート">
+                            </figure>
+                            <div class="cart-text">
+                                <h3 class="cart-item--title"><span>Yoga Yumiko</span>現役シリコンバレーエンジニアが教えるPython3 入門 + 応用 +アメリカのシリコンバレー流コードスタイル</h3>
+                                <p class="cart-item-price">￥24,000<span>（税込）</span><a href="#">削除</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <!-- contentsAra -->
     </main>
