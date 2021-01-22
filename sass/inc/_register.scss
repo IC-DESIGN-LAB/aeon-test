@@ -1,0 +1,370 @@
+.register-page{
+    background:#EDEDED;
+  }
+.registration {
+    margin-bottom: 195px;
+    @include mqsp {
+      margin-bottom: 160px;
+    }
+    .regi-form {
+      width: 90%;
+      max-width: 640px;
+      margin: 0px auto;
+      border: 2px solid #AE1679;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      padding: 30px 0px 50px;
+      background-color: #fff;
+      box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
+      @include mqsp {
+        margin-top: 70px;
+      }
+      .regi-header {
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E1E1E1;
+        h2 {
+          text-align: center;
+          font-weight: bold;
+          font-size: 36px;
+          letter-spacing: 0.1em;
+        }
+      }
+      .regi-body {
+        padding: 45px 70px 0px;
+        @include mqsp {
+          padding: 30px 20px;
+        }
+        label {
+          display: block;
+          text-align: left;
+          font-weight: 500;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          margin-top: 30px;
+          &:first-child {
+            margin-top: 0px;
+          }
+          span {
+            color: #AE1679;
+            font-size: 12px;
+          }
+        }
+        input, select {
+          color: #000;
+          font-weight: 500;
+          font-size: 16px;
+          letter-spacing: 0.1em;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          -webkit-border-radius: 5px;
+          outline: unset;
+          border: unset;
+          border: 1px solid #C1C1C1;
+          padding: 10px 20px;
+          box-sizing: border-box;
+          margin-top: 15px;
+          &:focus{
+            border: 1px solid #AE1679;
+          }
+        }
+        select {
+          height: 50px;
+        }
+        .regi-name {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          input {
+            width: calc(50% - 7.5px);
+            @include mqsp {
+              width: 100%;
+            }
+          }
+        }
+        .regi-gender {
+          label {
+            position: relative;
+            display: inline-block;
+            margin-top: 10px;
+            width: 80px;
+            margin-right: 30px;
+            text-align: right;
+            .checkmark {
+              position: absolute;
+              top: 7px;
+              left: 0px;
+              height: 20px;
+              width: 20px;
+              border: 1px solid #C1C1C1;
+              border-radius: 50%;
+              &::after {
+                display: none;
+                content: "";
+                position: absolute;
+                top: 2px;
+                left: 2px;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                background-color: #AE1679;
+              }
+            }
+          }
+          input[type='radio'] {
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+          input[type='radio']:checked ~ .checkmark {
+            &::after {
+              display: block;
+            }
+          }
+        }
+        .regi-birthday {
+          display: flex;
+          flex-wrap: wrap;
+          select {
+            width: calc(33.33% - 13.33px);
+            @include mqsp {
+              width: calc(50% - 10px);
+            }
+            &:first-child {
+              @include mqsp {
+                width: 100%;
+              }
+            }
+            &:nth-child(2) {
+              margin-left: 20px;
+              margin-right: 20px;
+              @include mqsp {
+                margin-left: 0px;
+              }
+            }
+          }
+        }
+        .regi-postal {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: baseline;
+          input {
+            width: calc(33.33% - 13.33px);
+            @include mqsp {
+              width: calc(50% - 10px);
+            }
+          }
+          span {
+            display: block;
+            width: 20px;
+            color: #707070;
+            text-align: center;
+            font-weight: 500;
+            font-size: 20px;
+          }
+          a {
+            position: relative;
+            top: 5px;
+            display: block;
+            margin-left: 20px;
+            text-align: center;
+            font-weight: 500;
+            font-size: 12px;
+            color: #AE1679;
+            border: 1px solid #AE1679;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            padding: 10px 15px;
+            @include mqsp
+            {
+              width: calc(50% - 10px);
+              margin-top: 10px;
+              margin-left: 0px;
+              padding: 10px 0px;
+            }
+            span {
+              display: inline-block;
+              width: 5px;
+              height: 5px;
+              margin: 0px 8px;
+              border-right: 1px solid #AE1679;
+              border-bottom: 1px solid #AE1679;
+              transform: rotate(-45deg);
+              -webkit-transform: rotate(-45deg);
+              -moz-transform: rotate(-45deg);
+              -ms-transform: rotate(-45deg);
+              -o-transform: rotate(-45deg);
+  }
+          }
+        }
+        .regi-address-gp {
+          margin-top: 10px;
+        }
+        .regi-street {
+          input {
+            width: 100%;
+          }
+        }
+        .regi-ph {
+          input {
+            width: 100%;
+          }
+        }
+        .regi-email {
+          input {
+            width: 100%;
+            &:last-child {
+              margin-top: 10px;
+            }
+          }
+        }
+        .regi-password {
+          input {
+            width: 100%;
+            &:last-child {
+              margin-top: 10px;
+            }
+          }
+          p {
+            color: #E80F0F;
+            font-weight: 500;
+            font-size: 12px;
+            letter-spacing: 0.1em;
+          }
+        }
+        .regi-check {
+          margin-top: 50px;
+          label {
+            margin-left: 25px;
+            position: relative;
+            display: block;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+            a  {
+              color: #AE1679;
+              font-weight: 500;
+              font-size: 16px;
+            }
+            input[type='checkbox'] {
+              padding: 0px;
+              margin: 0px;
+              position: absolute;
+              opacity: 0;
+              top: 4px;
+              left: -24px;
+              width: 15px;
+              height: 15px;
+              cursor: pointer;
+              z-index: 1;
+            }
+            .check {
+              position: absolute;
+              top: 3px;
+              left: -25px;
+              height: 15px;
+              width: 15px;
+              border: 1px solid #000000;
+              cursor: pointer;
+              &::after {
+                display: none;
+                content: '';
+                position: absolute;
+                left: 3px;
+                top: -3px;
+                width: 14px;
+                height: 7px;
+                border: solid #000000;
+                border-width: 0 0 2px 2px;
+                transform: rotate(-45deg);
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -ms-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+              }
+            }
+            input[type='checkbox']:checked ~ .check::after {
+              display: block;
+            }
+          }
+        }
+        .regi-submit {
+          display: block;
+          color: #ffffff;
+          text-align: center;
+          font-family: 'KozGoPr6NRegular';
+          font-weight: bold;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          padding: 15px 60px;
+          margin: 60px auto 0;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          background-color: #AE1679;
+        }
+      }
+      .regi-footer {
+        text-align: center;
+        margin-top: 10px;
+        p {
+          color: #E80F0F;
+          font-weight: 500;
+          font-size: 12px;
+          letter-spacing: 0.1em;
+        }
+      }
+    }
+  }
+  
+  .registration-edit {
+    .regi-form {
+      .regi-body {
+        @include mqsp {
+          padding: 30px 20px 0px;
+        }
+        input, select {
+          color: #000000;
+        }
+        .regi-name {
+          input {
+            width: calc(50% - 10px);
+          }
+        }
+        .regi-password {
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+  
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #C1C1C1;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #C1C1C1;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #C1C1C1;
+  }

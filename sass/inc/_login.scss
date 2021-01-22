@@ -1,0 +1,113 @@
+.login-page{
+  background:#EDEDED;
+}
+.login {
+  margin-bottom: 290px;
+  @include mqsp {
+    margin-bottom: 80px;
+  }
+  .login-form {
+    width: 90%;
+    max-width: 640px;
+    text-align: center;
+    margin: 0px auto;
+    border: 2px solid #AE1679;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
+    padding: 30px 0px 40px;
+    background-color: #fff;
+    @include mqsp {
+      margin-top: 70px;
+    }
+    .login-header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #E1E1E1;
+      h2 {
+        font-weight: bold;
+        font-size: 36px;
+        letter-spacing: 0.1em;
+        @include ssp{
+          font-size: 20px;
+        }
+      }
+    }
+    .login-body {
+      padding: 45px 70px 40px;
+      @include mqsp {
+        padding: 30px 20px;
+      }
+      label {
+        display: block;
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        margin-bottom: 5px;
+        @include ssp{
+          font-size: 16px;
+        }
+      }
+      input {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        outline: unset;
+        border: unset;
+        border: 1px solid #C1C1C1;
+        background-color: unset;
+        padding:12px 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        &:focus{
+          border: 1px solid #AE1679;
+        }
+        @include mqsp {
+          border-color: #C1C1C1;
+        }
+      }
+      .login-submit {
+        color: #ffffff;
+        padding: 15px 60px;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        background-color: #AE1679;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-top: 10px;
+        @include ssp{
+          font-size: 16px;
+        }
+      }
+    }
+    .login-footer {
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        a {
+          color: #AE1679;
+        }
+        &:last-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

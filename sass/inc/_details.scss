@@ -89,7 +89,7 @@
                             color: #000;
                             font-family: kozuka-gothic-pro, sans-serif;
                             @include ssp{
-                               font-size: 16px; 
+                               font-size: 18px; 
                             }
                             span{
                                 font-size: 18px;
@@ -155,6 +155,8 @@
                                     font-size: 14px;
                                     font-weight: 500;
                                     font-family: kozuka-gothic-pro, sans-serif;
+                                    list-style-type: disc;
+                                     margin-left: 12px;
                                     @include ssp{
                                        font-size: 12px; 
                                     }
@@ -172,7 +174,7 @@
                                         font-weight: bold;
                                         color: #000;
                                         @include ssp{
-                                           font-size: 19px; 
+                                           font-size: 24px; 
                                         }
                                         span{
                                             font-size: 18px;
@@ -199,7 +201,7 @@
                                         line-height: 1;
                                         @include ssp{
                                            padding: 15px 0;
-                                           font-size: 14px;
+                                           font-size: 16px;
                                            border-radius: 5px;
                                         }
                                     }
@@ -256,6 +258,9 @@
                                         margin-right: 0;
                                         padding-left: 0;
                                         box-shadow: unset;
+                                        &:after{
+                                            content: unset;
+                                        }
                                         a{
                                             display: -webkit-box;
                                             display: -moz-box;
@@ -302,15 +307,16 @@
                                     .detail{
                                         &-thumb{
                                             @include ssp{
-                                                width: 40%;
+                                                width: 42%;
                                                 border-radius: 10px;
-                                                box-shadow: 8px 8px 0px 0 rgba(174,22,121,0.3);
+                                                box-shadow: 10px 10px 0px -4px rgba(174,22,121,0.25);
                                             }
                                             &-date{
                                                 @include ssp{
                                                     top: -10px;
                                                     bottom: unset;
                                                     left: 0;
+                                                    padding: 1px 8px;
                                                 }
                                             }
                                         }
@@ -319,7 +325,7 @@
                                                 width: 58%;
                                                 box-sizing: border-box;
                                                 box-shadow: unset;
-                                                padding: 0 10px 0 15px
+                                                padding: 0 0 0 20px
                                             }
                                             .detail{
                                                 &-txt-name{
