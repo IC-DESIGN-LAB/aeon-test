@@ -8,14 +8,14 @@
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   -o-border-radius: 5px;
-  padding: 30px 0px 50px;
-  margin-bottom: 414px;
+  padding: 40px 0px 50px;
+  background-color: #ffffff;
   @include mqsp {
     margin-top: 70px;
     margin-bottom: 80px;
   }
   .thankyou-header {
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     border-bottom: 1px solid #E1E1E1;
     h2 {
       color: #AE1679;
@@ -24,6 +24,7 @@
       font-weight: bold;
       font-size: 24px;
       letter-spacing: 0.1em;
+      line-height: 1;
       @include mqsp {
         font-size: 20px;
       }
@@ -45,14 +46,6 @@
         padding: 0px 20px;
       }
     }
-    .contact-thank-you {
-      font-size: 18px;
-      line-height: 2;
-      @include mqsp {
-        text-align: center;
-        font-size: 14px;
-      }
-    }
     a {
       display: inline-block;
       margin-top: 50px;
@@ -68,6 +61,25 @@
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       padding: 10px 60px;
+      @include mqsp {
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+
+.contact-thank {
+  .thankyou-body {
+    margin-top: 30px;
+    text-align: center;
+    .contact-thank-you {
+      font-size: 18px;
+      line-height: 2;
+      @include mqsp {
+        text-align: center;
+        font-size: 14px;
+      }
     }
   }
 }

@@ -28,6 +28,9 @@
         font-size: 36px;
         letter-spacing: 0.1em;
         line-height: 1;
+        @include mqsp {
+          font-size: 20px;
+        }
       }
     }
     .contact-body {
@@ -41,9 +44,6 @@
         font-weight: 500;
         font-size: 14px;
         letter-spacing: 0.1em;
-        @include mqsp {
-          font-size: 16px;
-        }
       }
       label {
         display: block;
@@ -55,6 +55,7 @@
         letter-spacing: 0.1em;
         margin-top: 30px;
         @include mqsp {
+          font-size: 16px;
           margin-top: 40px;
         }
         &:first-of-type {
@@ -118,6 +119,7 @@
         -o-border-radius: 5px;
         background-color: #AE1679;
         @include mqsp {
+          font-size: 14px;
           margin: 50px auto 0;
         }
       }
