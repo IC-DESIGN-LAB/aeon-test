@@ -9,8 +9,8 @@ $('.slider').slick({
   autoplaySpeed: 500,
   focusOnSelect: true,
   variableWidth: true,
-  prevArrow: $('.prev-arrow'),
-  nextArrow: $('.next-arrow'),
+  prevArrow: '<button class="prev-arrow slick-arrow"></button>',
+  nextArrow: '<button class="next-arrow slick-arrow"></button>',
   responsive: [{
   breakpoint: 960,
     settings: {
