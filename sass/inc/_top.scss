@@ -18,6 +18,11 @@
       padding: 30px;
       box-sizing: border-box;
       box-shadow: 4px 2px 17px -6px rgba(0,0,0,0.6);
+      a{
+        &:focus{
+          outline: none;
+        }
+      }
       @include mqsp {
         padding: 20px;
         border-radius: 10px;

@@ -5,7 +5,7 @@ $('.slider').slick({
   slidesToShow: 1,
   centerMode: true,
   arrows: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 500,
   focusOnSelect: true,
   variableWidth: true,
