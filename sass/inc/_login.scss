@@ -18,8 +18,9 @@ body {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    padding: 30px 0px;
+    padding: 30px 0px 40px;
     background-color: #ffffff;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
     @include mqsp {
       margin-top: 70px;
     }
@@ -31,10 +32,13 @@ body {
         font-weight: bold;
         font-size: 36px;
         letter-spacing: 0.1em;
+        @include mqsp {
+          font-size: 20px;
+        }
       }
     }
     .login-body {
-      padding: 30px 70px;
+      padding: 45px 70px 40px;
       @include mqsp {
         padding: 30px 20px;
       }
@@ -46,6 +50,10 @@ body {
           font-weight: 500;
           font-size: 20px;
           letter-spacing: 0.1em;
+          margin-bottom: 5px;
+          @include mqsp {
+            font-size: 16px;
+          }
         }
         input {
           display: block;
@@ -65,15 +73,15 @@ body {
           border: unset;
           border: 1px solid #AE1679;
           background-color: unset;
-          padding: 0px 10px;
+          padding: 12px 10px;
           box-sizing: border-box;
+          margin-bottom: 20px;
           @include mqsp {
             border-color: #C1C1C1;
           }
         }
       }
       .login-password {
-        margin-top: 20px;
         label {
           display: block;
           text-align: left;
@@ -81,6 +89,10 @@ body {
           font-weight: 500;
           font-size: 20px;
           letter-spacing: 0.1em;
+          margin-bottom: 5px;
+          @include mqsp {
+            font-size: 16px;
+          }
         }
         input {
           display: block;
@@ -99,8 +111,9 @@ body {
           outline: unset;
           border: unset;
           border: 1px solid #C1C1C1;
-          padding: 0px 10px;
+          padding: 12px 10px;
           box-sizing: border-box;
+          margin-bottom: 20px;
         }
       }
       .login-submit {
@@ -116,7 +129,7 @@ body {
         -moz-border-radius: 5px;
         -ms-border-radius: 5px;
         -o-border-radius: 5px;
-        margin-top: 30px;
+        margin-top: 10px;
       }
     }
     .login-footer {
@@ -129,7 +142,7 @@ body {
           color: #AE1679;
         }
         &:last-child {
-          margin-top: 20px;
+          margin-top: 10px;
         }
       }
     }
