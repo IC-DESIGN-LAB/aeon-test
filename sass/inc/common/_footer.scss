@@ -41,6 +41,14 @@ footer{
         width: 18.8%;
         display: inline-block;
         text-align: center;
+        @include ssp{
+          font-size: 10px;
+          font-weight: 600;
+          width: 17.8%;
+          display: inline-block;
+          text-align: center;
+          letter-spacing: 1px;
+        }
         img{
           display: block;
           margin: 0 auto;

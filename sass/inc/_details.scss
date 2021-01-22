@@ -97,6 +97,7 @@
                                 color: #959595;
                                 font-family: kozuka-gothic-pro, sans-serif;
                                 padding-bottom: 10px;
+                                display: inline-block;
                                 @include ssp{
                                    font-size: 14px; 
                                 }
@@ -133,8 +134,11 @@
                         }
                         &-02{
                             border: 1px solid #AE1679;
-                            border-radius: 15px;
+                            border-radius: 10px;
                             padding: 20px 15px;
+                            @include ssp{
+                                border-radius: 5px; 
+                             }
                             h2{
                                 font-size: 16px;
                                 font-weight: 700;
@@ -195,7 +199,8 @@
                                         line-height: 1;
                                         @include ssp{
                                            padding: 15px 0;
-                                           font-size: 14px; 
+                                           font-size: 14px;
+                                           border-radius: 5px;
                                         }
                                     }
                                 }
