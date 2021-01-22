@@ -3,19 +3,19 @@
   max-width: 640px;
   margin: 0px auto;
   border: 2px solid #AE1679;
-  border-radius: 5px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  padding: 40px 0px 50px;
-  background-color: #ffffff;
+  border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px 0px 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
   @include mqsp {
     margin-top: 70px;
-    margin-bottom: 80px;
   }
   .thankyou-header {
-    padding-bottom: 40px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #E1E1E1;
     h2 {
       color: #AE1679;
@@ -31,7 +31,7 @@
     }
   }
   .thankyou-body {
-    margin-top: 40px;
+    margin-top: 30px;
     text-align: center;
     p {
       font-family: 'KozGoPr6NRegular';
@@ -39,16 +39,20 @@
       font-size: 16px;
       letter-spacing: 0.1em;
       &:last-of-type {
-        margin-top: 30px;
+        margin-top: 20px;
+        @include mqsp {
+          margin-top: 40px;
+        }
       }
       @include mqsp {
         text-align: left;
         padding: 0px 20px;
+        font-size: 14px;
       }
     }
     a {
       display: inline-block;
-      margin-top: 50px;
+      margin-top: 40px;
       font-family: 'KozGoPr6NRegular';
       font-weight: bold;
       font-size: 20px;
