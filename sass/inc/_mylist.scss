@@ -1,0 +1,142 @@
+.submylist * {
+    box-sizing: border-box;
+}
+
+.submylist-inner {
+    padding-bottom: 70px;
+    @include mqsp {
+        padding: 30px 0 60px;
+    }
+    .submylist-title {
+        font-size: 32px;
+        text-align: center;
+        font-weight: 600;
+        margin-bottom: 40px;
+        @include mqsp {
+            margin-bottom: 20px;
+        }
+    }
+    .submylist-tab {
+        text-align: center;
+        position: relative;
+        &:after {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background: #AE1679;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+        }
+        li {
+            max-width: 250px;
+            width: 40%;
+            margin: 0 3px;
+            display: inline-block;
+            background: #fff;
+            color: #AE1679;
+            border: 2px solid #AE1679;
+            border-bottom: none;
+            font-size: 20px;
+            text-align: center;
+            font-weight: 600;
+            cursor: pointer;
+            padding: 10px 0 7px;
+            border-radius: 5px 5px 0 0;
+            -webkit-border-radius: 5px 5px 0 0;
+            -moz-border-radius: 5px 5px 0 0;
+            -ms-border-radius: 5px 5px 0 0;
+            -o-border-radius: 5px 5px 0 0;
+            @include mqsp {
+                font-size: 16px;
+            }
+        }
+        .tab-active {
+            background: #AE1679;
+            color: #fff;
+        }
+    }
+    .detail-list {
+        width: 90%;
+        margin: 40px auto;
+        @include mqsp {
+            display: block;
+        }
+        .detail-item {
+            &:nth-child(3n) {
+                margin-right: 0;
+            }
+            @media (max-width: 1150px) {
+                &:nth-child(even) {
+                    margin-right: 0;
+                }
+                &:nth-child(odd) {
+                    margin-right: 6%;
+                }
+            }
+            @include mqsp {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                margin-right: 0;
+                padding-left: 0;
+                background: none;
+                box-shadow: none;
+            }
+            .detail-thumb {
+                @include mqsp {
+                    width: 45.6%;
+                }
+                figure {
+                    img {
+                        @include mqsp {
+                            box-shadow: 10px 10px 0px -3px rgba(174, 22, 121, 0.3);
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+            .detail-txtArea {
+                padding: 13px 20px 25px;
+                @include mqsp {
+                    width: 50%;
+                    padding: 0;
+                    box-shadow: none;
+                    border-radius: 0;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    -ms-border-radius: 0;
+                    -o-border-radius: 0;
+                }
+                .submylist-item-date {
+                    font-size: 14px;
+                    color: #AE1679;
+                    font-family: "Helvetica Neue", Helvetica, Arial;
+                    padding-bottom: 5px;
+                }
+                h3 {
+                    font-size: 16px;
+                    line-height: 1.4;
+                    text-decoration: underline;
+                    text-decoration-color: #AE1679;
+                    -moz-text-decoration-color: #AE1679;
+                }
+                .btn {
+                    font-size: 16px;
+                    width: 100%;
+                    border-radius: 5px;
+                    -webkit-border-radius: 5px;
+                    -moz-border-radius: 5px;
+                    -ms-border-radius: 5px;
+                    -o-border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+#submylist-video-show {
+    display: none;
+}
