@@ -10,7 +10,7 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    padding: 30px 0px;
+    padding: 30px 0px 40px;
     @include mqsp {
       margin-top: 70px;
     }
@@ -26,7 +26,7 @@
       }
     }
     .regi-body {
-      padding: 30px 70px;
+      padding: 30px 70px 0px;
       @include mqsp {
         padding: 30px 20px;
       }
@@ -304,9 +304,34 @@
           }
         }
       }
+      .regi-submit {
+        display: block;
+        color: #ffffff;
+        text-align: center;
+        font-family: 'KozGoPr6NRegular';
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        padding: 15px 60px;
+        margin: 60px auto 0;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        background-color: #AE1679;
+      }
     }
     .regi-footer {
-
+      text-align: center;
+      margin-top: 10px;
+      p {
+        color: #E80F0F;
+        font-family: 'KozGoPr6NRegular';
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+      }
     }
   }
 }
