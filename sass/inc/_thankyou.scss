@@ -12,6 +12,7 @@
   margin-bottom: 414px;
   @include mqsp {
     margin-top: 70px;
+    margin-bottom: 80px;
   }
   .thankyou-header {
     padding-bottom: 30px;
@@ -42,6 +43,14 @@
       @include mqsp {
         text-align: left;
         padding: 0px 20px;
+      }
+    }
+    .contact-thank-you {
+      font-size: 18px;
+      line-height: 2;
+      @include mqsp {
+        text-align: center;
+        font-size: 14px;
       }
     }
     a {
