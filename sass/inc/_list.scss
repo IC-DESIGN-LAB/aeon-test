@@ -1,9 +1,9 @@
 .liver {
-    max-width: 1000px;
+    max-width: 1280px;
     width: 90%;
-    margin: 60px auto 150px;
+    margin: 60px auto 145px;
     @include mqsp {
-        margin: 60px auto 150px;
+        margin: 60px auto 145px;
     }
     @include ssp {
         margin: 60px auto 90px;      
@@ -30,7 +30,21 @@
             margin-bottom: 4%;
             background-color: #ffffff;
             border-radius: 10px;
-            box-shadow: 15px 15px 0px 0 rgba(174, 22, 121, 0.3);
+            position: relative;
+            &:after{
+                width: 95%;
+                height: 95%;
+                bottom: -15px;
+                right: -15px;
+                background: #ac157840;
+                content: "";
+                position: absolute;
+                z-index: -1;
+                border-radius: 10px;
+                @include ssp {
+                    content: unset;
+                }
+            }
             @media (max-width: 1150px) {
                 width: 44%;
                 margin-right: 6%;
@@ -45,12 +59,30 @@
                 }
             }
             @include ssp {
-                display: flex;
                 width: 100%;
                 margin-right: 0;
                 margin-bottom: 30px;
                 box-shadow: unset;
-                align-items: flex-start;
+                a{
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-box;
+                    display: -webkit-flexbox;
+                    display: -moz-flexbox;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: flex;
+                    -webkit-box-lines: multiple;
+                    -moz-box-lines: multiple;
+                    -webkit-flex-wrap: wrap;
+                    -moz-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
                 &:last-child {
                     margin-bottom: 0;
                 }
@@ -69,8 +101,8 @@
                 }
             }
             @include ssp {
-                width: 40%;
-                box-shadow: 8px 8px 0px 0 rgba(174, 22, 121, 0.3);
+                width: 42%;
+                box-shadow: 10px 10px 0px -4px rgba(174,22,121,0.25);
                 border-radius: 10px;
                 -webkit-border-radius: 10px;
                 -moz-border-radius: 10px;
@@ -101,11 +133,13 @@
                 @include ssp {
                     font-size: 10px;
                     letter-spacing: 0.1em;
-                    padding: 3px 8px;
+                    padding: 1px 8px;
                     display: inline-block;
                     top: 0;
                     bottom: unset;
                     height: auto;
+                    top: -10px;
+                    bottom: unset;
                     left: 0;
                 }
             }
@@ -119,7 +153,7 @@
             @include ssp {
                 position: relative;
                 width: 58%;
-                padding: 0 0 0 25px;
+                padding: 0 0 0 20px;
                 box-sizing: border-box;
                 box-shadow: unset;
                 border-radius: 0px;
@@ -149,7 +183,7 @@
                 font-weight: 600;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
-                -webkit-line-clamp: 2;
+                -webkit-line-clamp: 3;
                 text-overflow: ellipsis;
                 overflow: hidden;
                 @include ssp {

@@ -5,7 +5,7 @@ $('.slider').slick({
   slidesToShow: 1,
   centerMode: true,
   arrows: true,
-  autoplay: false,
+  autoplay: true,
   autoplaySpeed: 500,
   focusOnSelect: true,
   variableWidth: true,
@@ -20,4 +20,18 @@ $('.slider').slick({
       centerPadding: '15px',
     }
   }]
+});
+
+$('.submylist-tab li').each(function(e) {
+  var t = $(this).attr('id');
+  $(this).on("click", function(e) {
+      $('#' + t + '-show').css('display', 'block');
+      $('.submylist-wrap').children('#' + t + '-show').siblings().css('display', 'none');
+      $(this).addClass("tab-active");
+      $(this).siblings().removeClass("tab-active");
+  });
+});
+
+$('.logout-close').click(function() {
+  $('.logout').fadeOut();
 });

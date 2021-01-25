@@ -18,6 +18,11 @@
       padding: 30px;
       box-sizing: border-box;
       box-shadow: 4px 2px 17px -6px rgba(0,0,0,0.6);
+      a{
+        &:focus{
+          outline: none;
+        }
+      }
       @include mqsp {
         padding: 20px;
         border-radius: 10px;
@@ -334,7 +339,18 @@ div{
     margin-bottom: 4%;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 15px 15px 0px 0 rgba(174,22,121,0.3);
+    position: relative;
+    &:after{
+      width: 95%;
+      height: 95%;
+      bottom: -15px;
+      right: -15px;
+      background: #ac157840;
+      content: "";
+      position: absolute;
+      z-index: -1;
+      border-radius: 10px;
+    }
       @media (max-width: 1150px) {
         width: 44%;
         margin-right: 6%;
@@ -405,6 +421,9 @@ div{
     &-ttl{
       font-size: 16px;
       font-weight: 600;
+      -webkit-line-clamp: 3;
+      text-overflow: ellipsis;
+      overflow: hidden;
       @include mqsp {
        font-size: 14px;
       }
