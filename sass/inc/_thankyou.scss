@@ -24,7 +24,7 @@
       font-size: 24px;
       letter-spacing: 0.1em;
       line-height: 1;
-      @include mqsp {
+      @include ssp {
         font-size: 20px;
       }
     }
@@ -38,12 +38,15 @@
       letter-spacing: 0.1em;
       &:last-of-type {
         margin-top: 30px;
+        @include mqsp {
+          margin-top: 20px;
+        }
       }
       @include mqsp {
         text-align: left;
         padding: 0px 20px;
       }
-      @include mqsp {
+      @include ssp {
         font-size: 14px;
       }
     }
@@ -61,7 +64,8 @@
       -ms-border-radius: 5px;
       -o-border-radius: 5px;
       padding: 10px 60px;
-      @include mqsp {
+      font-weight: 500;
+      @include ssp {
         font-size: 14px;
       }
     }
@@ -78,7 +82,12 @@
       line-height: 2;
       @include mqsp {
         text-align: center;
+        font-size: 16px;
+      }
+      @include ssp {
+        text-align: center;
         font-size: 14px;
+        padding: 0px 10px;
       }
     }
   }

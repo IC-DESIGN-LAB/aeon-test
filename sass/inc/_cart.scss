@@ -210,16 +210,26 @@
       font-weight: 600;
       color: #AE1679;
       margin-bottom: 20px;
+      @include ssp{
+        font-size: 24px;
+      }
   }
   p {
       font-size: 24px;
       font-weight: 600;
       line-height: 1.8;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
+      color: #383838;
+      @include ssp{
+       font-size: 20px;
+      }
       span {
-          font-size: 18px;
+          font-size: 16px;
           font-weight: 500;
           display: block;
+          @include ssp{
+           font-size: 14px;
+          }
       }
   }
   .cart-payment-button {
@@ -241,9 +251,13 @@
           -moz-border-radius: 5px;
           -ms-border-radius: 5px;
           -o-border-radius: 5px;
+          font-weight: 500;
           @include mqsp {
               margin: 0 auto 20px;
           }
+          @include ssp{
+           font-size: 16px;
+         }
       }
   }
 }

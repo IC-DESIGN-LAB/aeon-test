@@ -127,14 +127,23 @@
     <main>
         <div class="subpage login" id="login">
             <div class="subpage-inner">
-                <div class="thank-you">
-                    <div class="thankyou-header">
-                        <h2>ご登録ありがとうございます。</h2>
-                    </div>
-                    <div class="thankyou-body">
-                        <p>ご登録アドレスに完了メールをお送りしました。<br class="isPc"> ご確認ください。</p>
-                        <p>コンテンツをお楽しみください。</p>
-                        <a href="index.html">ホーム</a>
+                <div class="registration registration-edit">
+                    <div class="regi-form">
+                        <div class="regi-header">
+                        <h2>会員情報</h2>
+                        </div>
+                        <div class="regi-body regi-body-complete">
+                            <h2>本人確認のため、メールアドレスの<br>認証をお願いします。</h2>
+                            <p>入力されているメールアドレス宛に、認証メールをお送りしますので、メール内のURLをクリックして認証してください。会員情報の登録は、認証後となります。</p>
+                            <form action="" method="post">
+                                <div class="regi-email">
+                                    <input type="text" name="email" placeholder="メールアドレスの入力">
+                                </div>
+                                <div class="submit-btn">
+                                    <button type="submit" class="send-mail-submit">送信</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

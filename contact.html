@@ -79,7 +79,7 @@
 
 </head>
 
-<body class="register-page">
+<body class="login-page">
     <header id="header" class="header">
         <div class="header-left">
             <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1>
@@ -127,14 +127,38 @@
     <main>
         <div class="subpage login" id="login">
             <div class="subpage-inner">
-                <div class="thank-you">
-                    <div class="thankyou-header">
-                        <h2>ご登録ありがとうございます。</h2>
-                    </div>
-                    <div class="thankyou-body">
-                        <p>ご登録アドレスに完了メールをお送りしました。<br class="isPc"> ご確認ください。</p>
-                        <p>コンテンツをお楽しみください。</p>
-                        <a href="index.html">ホーム</a>
+                <div class="contact">
+                    <div class="contact-form">
+                        <div class="contact-header">
+                        <h2>お問い合わせ</h2>
+                        </div>
+                        <div class="contact-body">
+                        <p>ご意見、ご質問、メッセージなど等々<br class="isSp">お気軽にお問い合わせください。</p>
+                        <form action="">
+                            <label>お名前</label>
+                            <div class="contact-name">
+                            <input type="text" name="n1" placeholder="漢字">
+                            <input type="text" name="n2" placeholder="カタカナ">
+                            </div>
+                            <label>メールアドレス</label>
+                            <div class="contact-email">
+                            <input type="text" name="email" placeholder="半角で入力">
+                            <input type="text" name="confirm-email" placeholder="確認">
+                            </div>
+                            <label>お問い合わせ内容</label>
+                            <div class="contact-message">
+                            <textarea name="message" rows="7" placeholder="お問い合わせ内容をご記入ください。"></textarea>
+                            </div>
+                            <p class="isPc">お問い合わせ内容をご記入ください。</p>
+                            <div class="submit-btn">
+                                <button type="submit" class="contact-submit">送信</button>
+                            </div>
+                        </form>
+                        </div>
+                        <div class="contact-footer isPc">
+                        <p>入力に誤りがあります。</p>
+                        <p>各項目のエラー内容をご確認ください。</p>
+                        </div>
                     </div>
                 </div>
             </div>
