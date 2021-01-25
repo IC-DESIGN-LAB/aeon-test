@@ -84,6 +84,7 @@
   }
   &-authcArea{
     display: flex;
+    align-items: center;
     &-item{
       margin-right: 20px;
       @include mqsp {
@@ -140,6 +141,22 @@
           font-size: 10px;
         }
       }
+      &.hd-cart-icon{
+        a{
+          border: none;
+          padding: 7px 10px;
+          background: none;
+          &:after{
+            content: unset;
+          }
+          img{
+            max-width: 35px;
+            vertical-align: bottom;
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
         &:last-child{
           margin-right: 0;
         }
@@ -148,6 +165,12 @@
             display: block;
             margin: 0 auto 5px;
             width: 22px;
+          }
+          &.sp-news-img{
+            width: 18px;
+          }
+          &.sp-cart-img{
+            width: 25px;
           }
         }
     }

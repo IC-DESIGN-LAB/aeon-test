@@ -110,10 +110,15 @@
           <li class="header-menuArea-item"><a href="cart.html">カート</a></li>
           <li class="header-menuArea-item"><a href="news.html">お知らせ</a></li>
         </ul>
-        <ul class="header-menuArea authc">
+        <ul class="header-menuArea authc authc-logout">
           <li class="header-menuArea-item"><a href="register.html">新規会員登録</a></li>
           <li class="header-menuArea-item"><a href="login.html">ログイン</a></li>
         </ul>
+        <ul class="header-menuArea authc authc-login" style="display: none;">
+            <li class="header-menuArea-item"><a href="mylist.html">マイリスト</a></li>
+            <li class="header-menuArea-item"><a href="logout.html">ログアウト</a></li>
+            <li class="header-menuArea-item"><a href="register-edit.html">会員情報の編集</a></li>
+          </ul>
         <div class="header-sns">
           <p class="header-sns-ttl">Follow us</p>
           <ul class="header-snsArea">
@@ -129,17 +134,26 @@
       </nav>
     </div>
     <div class="header-right">
-      <ul class="header-authcArea isPc">
+      <ul class="header-authcArea header-authcArea-login isPc">
         <li class="header-authcArea-item"><a href="register.html">新規会員登録</a></li>
         <li class="header-authcArea-item"><a href="login.html">ログイン</a></li>
       </ul>
+      <ul class="header-authcArea header-authcArea-logout isPc" style="display:none">
+        <li class="header-authcArea-item hd-cart-icon"><a href="register.html"><img src="img/cart-icon.svg" alt=""></a></li>
+        <li class="header-authcArea-item"><a href="mylist.html">マイリスト</a></li>
+      </ul>
       <div class="sp-nav isSp d-fl">
         <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1>
-        <ul class="header-authcArea">
+        <ul class="header-authcArea header-authcArea-logout">
           <li class="header-authcArea-item"><a href="register.html"><img src="img/registration.svg">会員登録</a></li>
           <li class="header-authcArea-item"><a href="login.html"><img src="img/login.svg" class="login-img">ログイン</a>
           </li>
         </ul>
+        <ul class="header-authcArea header-authcArea-login" style="display:none">
+            <li class="header-authcArea-item"><a href="news.html"><img src="img/sp-news-i.svg" class="sp-news-img">お知らせ</a></li>
+            <li class="header-authcArea-item"><a href="login.html"><img src="img/sp-cart-i.svg" class="sp-cart-img">カート</a>
+            </li>
+          </ul>
       </div>
     </div>
   </header>
