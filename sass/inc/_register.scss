@@ -81,6 +81,9 @@
           padding: 15px 10px;
           box-sizing: border-box;
           margin-top: 10px;
+          @include ssp{
+            padding: 12px 10px;
+          }
           &:focus{
             border: 1px solid #AE1679;
           }
@@ -90,6 +93,9 @@
         }
         select {
           height: 50px;
+          @include ssp {
+            height: 44px;
+          }
         }
         .regi-name {
           display: flex;
@@ -98,7 +104,6 @@
           input {
             width: calc(50% - 7.5px);
             @include mqsp {
-              width: 100%;
             }
           }
         }
@@ -138,6 +143,7 @@
                 -ms-border-radius: 50%;
                 -o-border-radius: 50%;
                 background-color: #AE1679;
+                height: unset;
               }
             }
           }
@@ -157,8 +163,31 @@
         .regi-birthday {
           display: flex;
           flex-wrap: wrap;
-          select {
+          .select-bd{
             width: calc(33.33% - 13.33px);
+            position: relative;
+            border: 1px solid #C1C1C1;
+            box-sizing: border-box;
+            margin-top: 10px;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            z-index: 9;
+            &::after{
+              content: "";
+              position: absolute;
+              top: 50%;
+              right: 10px;
+              transform: translate( 0 , -50%);
+              width: 8px;
+              height: 8px;
+              background-image: url(../img/select-af.svg);
+              background-size: contain;
+              background-repeat: no-repeat;
+            }
             @include mqsp {
               width: calc(50% - 10px);
             }
@@ -173,6 +202,18 @@
               @include mqsp {
                 margin-left: 0px;
               }
+            }
+            select {
+              width: 100%;
+              border:none;
+              appearance: none;
+              -moz-appearance: none;
+              -webkit-appearance: none;
+              outline: unset;
+              background: #fff0;
+              position: relative;
+              z-index: 1;
+              margin: 0;
             }
           }
         }

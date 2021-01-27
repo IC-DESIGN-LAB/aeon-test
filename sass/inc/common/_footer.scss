@@ -105,8 +105,38 @@ footer{
         display: flex;
         max-width: 318px;
         margin-left: auto;
+        justify-content: space-between;
         &-item{
-          margin-right: 25px;
+          padding: 0 5px;
+          position: relative;
+          &:after{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            background: #fff;
+          }
+          &:hover{
+            color: #AE1679;
+            -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              -ms-transition: all 0.3s;
+              transition: all 0.3s;
+            &:after{
+              width: 100%;
+              height: 1px;
+              background: #AE1679;
+              box-sizing: border-box;
+              -webkit-transition: all 0.3s;
+              -moz-transition: all 0.3s;
+              -o-transition: all 0.3s;
+              -ms-transition: all 0.3s;
+              transition: all 0.3s;
+            }
+          }
           &:last-child{
             margin-right: 0;
           }
@@ -124,6 +154,5 @@ footer{
   font-size: 10px;
     @include mqsp {
         font-size: 10px;
-        margin-left: 0;
     }
 }
