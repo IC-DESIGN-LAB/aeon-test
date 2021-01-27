@@ -1,0 +1,182 @@
+.header{
+  position: relative;
+  &-left{
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      background-color: #AE1679;
+      width: 250px;
+      height: 100%;
+      padding: 45px 25px 0;
+      box-sizing: border-box;
+      color: #ffffff;
+      overflow: scroll;
+        @include mqsp {
+          display: none;
+        }
+  }
+  &-logo{
+    margin-bottom: 50px;
+      @include mqsp {
+        margin-bottom: 0;
+      }
+    img{
+      @include mqsp {
+        width: 160px;
+      }
+    }
+  }
+//  &-menu{
+//  }
+  &-menuArea{
+    &-item{
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    &.authc{
+      padding-top: 20px;
+      border-top: 1px solid #ffffff;
+      border-bottom: 1px solid #ffffff;
+      margin-bottom: 20px;
+    }
+  }
+  &-sns{
+    &-ttl{
+      font-size: 12px;
+      font-family: $enfont;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+  &-snsArea{
+      display: flex;
+      margin-bottom: 40px;
+      &-item{
+        width: 33px;
+        margin-right: 15px;
+        &:last-child{
+          margin-right: 0;
+        }
+      }
+    }
+  &-right{
+    position: fixed;
+    z-index: 2;
+    top: 25px;
+    right: 30px;
+    @include mqsp {
+      width: 100%;
+      background-color: #AE1679;
+      right: 0;
+      top: 0;
+      position: absolute;
+    }
+  }
+  .sp-nav{
+    width: 100%;
+    background-color: #AE1679;
+    width: 95%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0 8px;
+
+  }
+  &-authcArea{
+    display: flex;
+    align-items: center;
+    &-item{
+      margin-right: 20px;
+      @include mqsp {
+        margin-right: 12px;
+      }
+      a{
+        display: inline-block;
+        font-size: 14px;
+        background-color: #fff;
+        color: #AE1679;
+        font-weight: 600;
+        border:1px solid #AE1679;
+        padding: 7px 20px;
+        border-radius: 5px;
+        text-align: center;
+        box-sizing: border-box;
+        position: relative;
+        &:after{
+          content: '';
+          position: absolute;
+          width: 0;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background-color: #AE1679;
+          border-radius: 4px;
+          z-index: -1;
+        }
+        &:hover{
+          color: #fff;
+          background: none;
+          &:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: #AE1679;
+            border-radius: 4px;
+            z-index: -1;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -o-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            transition: all 0.3s;
+          }
+        }
+        @include mqsp {
+          color: #ffffff;
+          border: none;
+          background-color: transparent;
+          padding: 0;
+          font-size: 10px;
+        }
+      }
+      &.hd-cart-icon{
+        a{
+          border: none;
+          padding: 7px 10px;
+          background: none;
+          &:after{
+            content: unset;
+          }
+          img{
+            max-width: 35px;
+            vertical-align: bottom;
+            height: auto;
+            width: 100%;
+          }
+        }
+      }
+        &:last-child{
+          margin-right: 0;
+        }
+        img{
+          @include mqsp {
+            display: block;
+            margin: 0 auto 5px;
+            width: 22px;
+          }
+          &.sp-news-img{
+            width: 18px;
+          }
+          &.sp-cart-img{
+            width: 25px;
+          }
+        }
+    }
+  }
+  .login-img{
+    width: 20px;
+  }
+}

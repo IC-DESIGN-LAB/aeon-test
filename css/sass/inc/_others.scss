@@ -1,0 +1,74 @@
+.subpage{
+    .others{
+        &-inn{
+            max-width: 1000px;
+            width: 90%;
+            margin: 0 auto 60px;
+            &-title{
+                padding: 40px 0 20px;
+                h2 {
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 36px;
+                    letter-spacing: 0.1em;
+                    line-height: 1.5;
+                    @include ssp{
+                        font-size: 20px;
+                    }
+                }
+            }
+            &-wrap{
+                max-width: 600px;
+                width: 100%;
+                margin: auto;
+                nav{
+                    ul{
+                        li{
+                            width: 100%;
+                            text-align: left;
+                            padding: 20px 10px;
+                            border-top: 1px solid #C1C1C1;
+                            position: relative;
+                            box-sizing: border-box;
+                            @include ssp{
+                                padding: 10px 5px;
+                            }
+                            &:last-child{
+                                border-bottom: 1px solid #C1C1C1;
+                            }
+                            &:after{
+                                content: '>';
+                                position: absolute;
+                                font-size: 16px;
+                                color: #000;
+                                right: 10px;
+                                top: 50%;
+                                transform: translate( 0 , -50%);
+                                @include ssp{
+                                    font-size: 10px;
+                                }
+                            }
+                            a{
+                                font-size: 24px;
+                                font-weight: 600;
+                                display: block;
+                                width: 100%;
+                                @include ssp{
+                                    font-size: 16px;
+                                }
+                            }
+                            &:hover{
+                                &:after{
+                                    color: #AE1679;
+                                }
+                                a{
+                                    color: #AE1679;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,325 @@
+.login-page{
+  background:#EDEDED;
+}
+.logout-page {
+  width: 100%;
+  background: rgba(0, 0, 0, .5);
+}
+.login {
+  margin-bottom: 290px;
+  @include mqsp {
+    margin-bottom: 80px;
+  }
+  .login-form {
+    width: 90%;
+    max-width: 640px;
+    text-align: center;
+    margin: 0px auto;
+    border: 2px solid #AE1679;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
+    padding: 30px 0px 40px;
+    background-color: #fff;
+    @include mqsp {
+      margin-top: 70px;
+    }
+    @include ssp{
+      padding: 25px 0px 40px;
+    }
+    .login-header {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E1E1E1;
+        @include ssp{
+          padding-bottom: 20px;
+        }
+      h2 {
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 0.1em;
+        @include ssp{
+          font-size: 20px;
+        }
+      }
+    }
+    .login-body {
+      padding: 45px 70px 40px;
+      @include mqsp {
+        padding: 30px 20px;
+      }
+      label {
+        display: block;
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        margin-bottom: 5px;
+        @include ssp{
+          font-size: 16px;
+        }
+      }
+      input {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        width: 100%;
+        max-width: 500px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        outline: unset;
+        border: unset;
+        border: 1px solid #C1C1C1;
+        background-color: unset;
+        padding:12px 10px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        &:focus{
+          border: 1px solid #AE1679;
+        }
+        @include mqsp {
+          border-color: #C1C1C1;
+        }
+      }
+      .login-submit {
+        color: #ffffff;
+        padding: 15px 60px;
+        font-weight: bold;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        background-color: #AE1679;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-top: 10px;
+        @include ssp{
+          font-size: 16px;
+        }
+      }
+    }
+    .login-footer {
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+        a {
+          color: #AE1679;
+        }
+        &:last-child {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+.logout {
+  width: 100%;
+  padding-top: 100px;
+  .logout-inner {
+      max-width: 635px;
+      width: 90%;
+      margin: 0 auto;
+      padding: 30px 0 54px;
+      position: relative;
+      border: 4px solid #AE1679;
+      background: #fff;
+      text-align: center;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+        @include mqsp {
+            padding: 20px 0 54px;
+        }
+      h2 {
+          font-size: 36px;
+          font-weight: 600;
+          padding-bottom: 20px;
+          border-bottom: 1px solid #C1C1C1;
+          @include mqsp {
+              font-size: 24px;
+              padding-bottom: 15px;
+          }
+      }
+      p {
+          font-size: 20px;
+          font-weight: 600;
+          padding: 35px 0;
+          @include mqsp {
+              font-size: 16px;
+              padding: 35px 0 0;
+          }
+      }
+      .logout-close {
+          position: absolute;
+          right: 0;
+          top: -40px;
+          font-size: 25px;
+          color: #fff;
+          cursor: pointer;
+      }
+      .btn {
+          max-width: 205px;
+          width: 90%;
+          font-size: 20px;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          font-weight: 500;
+          @include mqsp {
+              font-size: 16px;
+          }
+      }
+  }
+}
+.contact {
+  .contact-form {
+    width: 90%;
+    max-width: 640px;
+    margin: 0px auto;
+    border: 2px solid #AE1679;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 30px 0px 50px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
+    @include mqsp {
+      margin-top: 70px;
+    }
+    .contact-header {
+      padding-bottom: 20px;
+      border-bottom: 1px solid #E1E1E1;
+        @include ssp {
+          // padding-bottom: 20px;
+        }
+      h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: 0.1em;
+        @include mqsp {
+          font-size: 24px;
+        }
+      }
+    }
+    .contact-body {
+      padding: 30px 70px 0px;
+      @include mqsp {
+        padding: 30px 20px 0px;
+      }
+      p {
+        text-align: center;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 0.1em;
+      }
+      label {
+        display: block;
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 0.1em;
+        margin-top: 20px;
+        @include mqsp {
+          font-size: 16px;
+          margin-top: 30px;
+        }
+        &:first-of-type {
+          margin-top: 30px;
+        }
+      }
+      input, textarea {
+        color: #000000;
+        font-weight: 500;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        outline: unset;
+        border: unset;
+        border: 1px solid #C1C1C1;
+        padding: 12px 10px;
+        box-sizing: border-box;
+        margin-top: 5px;
+        &:focus{
+          border: 1px solid #AE1679;
+        }
+      }
+      .contact-name, .contact-email {
+        input {
+          width: 100%;
+          &:last-of-type {
+            margin-top: 15px;
+          }
+        }
+      }
+      .contact-message {
+        textarea {
+          width: 100%;
+          resize: none;
+        }
+      }
+      .contact-message ~ p {
+        text-align: left;
+        color: #E80F0F;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+      }
+      .submit-btn{
+        text-align: center;
+        .contact-submit {
+          display: inline-block;
+          color: #ffffff;
+          text-align: center;
+          font-weight: bold;
+          font-size: 20px;
+          letter-spacing: 0.1em;
+          padding: 15px 60px;
+          max-width: 205px;
+          width: 100%;
+          margin: 50px auto 0;
+          border-radius: 5px;
+          -webkit-border-radius: 5px;
+          -moz-border-radius: 5px;
+          -ms-border-radius: 5px;
+          -o-border-radius: 5px;
+          background-color: #AE1679;
+          @include ssp {
+            font-size: 14px;
+            margin: 30px auto 0;
+          }
+         }
+      }
+    }
+    .contact-footer {
+      text-align: center;
+      margin-top: 10px;
+      p {
+        color: #E80F0F;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}

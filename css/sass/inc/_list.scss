@@ -1,0 +1,213 @@
+.liver {
+    max-width: 1280px;
+    width: 90%;
+    margin: 60px auto 145px;
+    @include mqsp {
+        margin: 60px auto 145px;
+    }
+    @include ssp {
+        margin: 60px auto 80px;
+    }
+    &-detail {
+        width: 90%;
+        margin-bottom: 100px;
+        &-inner {
+            @include mqsp {
+                width: 100%;
+            }
+        }
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -4%;
+            @include mqsp {
+                width: 100%;
+            }
+        }
+        &-item {
+            width: 29%;
+            margin-right: 4%;
+            margin-bottom: 4%;
+            background-color: #ffffff;
+            border-radius: 10px;
+            position: relative;
+            &:after{
+                width: 95%;
+                height: 95%;
+                bottom: -15px;
+                right: -15px;
+                background: #ac157840;
+                content: "";
+                position: absolute;
+                z-index: -1;
+                border-radius: 10px;
+                @include ssp {
+                    content: unset;
+                }
+            }
+            @media (max-width: 1150px) {
+                width: 44%;
+                margin-right: 6%;
+                margin-bottom: 6%;
+            }
+            @include mqsp {
+                width: 46%;
+            }
+            &:nth-child(2n){
+                @include mqsp {
+                    margin-right: 0;
+                }
+            }
+            @include ssp {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 30px;
+                box-shadow: unset;
+                a{
+                    display: -webkit-box;
+                    display: -moz-box;
+                    display: -ms-box;
+                    display: -webkit-flexbox;
+                    display: -moz-flexbox;
+                    display: -ms-flexbox;
+                    display: -webkit-flex;
+                    display: -moz-flex;
+                    display: -ms-flex;
+                    display: flex;
+                    -webkit-box-lines: multiple;
+                    -moz-box-lines: multiple;
+                    -webkit-flex-wrap: wrap;
+                    -moz-flex-wrap: wrap;
+                    -ms-flex-wrap: wrap;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &:first-child {
+                @include ssp {
+                    margin-right: 0;
+                }
+            }
+        }
+        &-thumb {
+            position: relative;
+            figure {
+                @include ssp {
+                    height: 100%;
+                }
+            }
+            @include ssp {
+                width: 42%;
+                box-shadow: 10px 10px 0px -4px rgba(174,22,121,0.25);
+                border-radius: 10px;
+                -webkit-border-radius: 10px;
+                -moz-border-radius: 10px;
+                -ms-border-radius: 10px;
+                -o-border-radius: 10px;
+            }
+            figure {
+                img {
+                    border-radius: 10px;
+                    width: 100%;
+                    vertical-align: bottom;
+                    @include ssp {
+                        height: 100%;
+                    }
+                }
+            }
+            &-date {
+                background-color: #AE1679;
+                border-radius: 5px;
+                padding: 3px 10px;
+                display: inline-block;
+                color: #ffffff;
+                font-weight: 600;
+                font-family: $enfont;
+                position: absolute;
+                bottom: -8px;
+                left: -10px;
+                @include ssp {
+                    font-size: 10px;
+                    letter-spacing: 0.1em;
+                    padding: 1px 8px;
+                    display: inline-block;
+                    top: 0;
+                    bottom: unset;
+                    height: auto;
+                    top: -10px;
+                    bottom: unset;
+                    left: 0;
+                }
+            }
+        }
+        &-txtArea {
+            padding: 20px 15px 0 20px;
+            padding-top: 20px;
+            border-radius: 10px;
+            box-shadow: 4px 5px 16px -9px rgba(0, 0, 0, 0.6);
+            box-sizing: border-box;
+            @include ssp {
+                position: relative;
+                width: 58%;
+                padding: 0 0 0 20px;
+                box-sizing: border-box;
+                box-shadow: unset;
+                border-radius: 0px;
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                -ms-border-radius: 0px;
+                -o-border-radius: 0px;
+            }
+        }
+        &-txt {
+            margin-bottom: 15px;
+            @include ssp {
+                margin-bottom: 0;
+            }
+            &-name {
+                font-size: 14px;
+                color: #959595;
+                margin-bottom: 10px;
+                letter-spacing: 0.1em;
+                @include ssp {
+                    font-size: 12px;
+                    margin-bottom: 0;
+                }
+            }
+            &-ttl {
+                font-size: 16px;
+                font-weight: 600;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                @include ssp {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-tag {
+            text-align: right;
+            @include ssp {
+                display: none;
+            }
+            &-item {
+                font-size: 10px;
+                display: inline-block;
+                color: #AE1679;
+                margin-right: 5px;
+                margin-bottom: 15px;
+                @include ssp {
+                    font-size: 8px;
+                    margin-right: 3px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
