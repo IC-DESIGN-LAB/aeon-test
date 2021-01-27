@@ -6,7 +6,7 @@
         margin: 60px auto 145px;
     }
     @include ssp {
-        margin: 60px auto 90px;      
+        margin: 60px auto 80px;
     }
     &-detail {
         width: 90%;
@@ -164,7 +164,7 @@
             }
         }
         &-txt {
-            margin-bottom: 25px;
+            margin-bottom: 15px;
             @include ssp {
                 margin-bottom: 0;
             }

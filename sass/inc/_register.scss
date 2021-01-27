@@ -16,30 +16,34 @@
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
-      padding: 35px 0px 50px;
+      padding: 30px 0px 30px;
       background-color: #fff;
       box-shadow: 0px 8px 16px -2px rgba(10,10,10,0.1), 4px 1px 10px -30px rgba(10,10,10,0.02);
       @include mqsp {
         margin-top: 56px;
+        padding: 25px 0px 10px;
       }
       .regi-header {
-        padding-bottom: 30px;
+        padding-bottom: 25px;
         border-bottom: 1px solid #E1E1E1;
+          @include ssp{
+            padding-bottom: 20px;
+          }
         h2 {
           text-align: center;
           font-weight: bold;
-          font-size: 36px;
+          font-size: 32px;
           letter-spacing: 0.1em;
           line-height: 1.5;
           @include ssp{
-            font-size: 20px;
+            font-size: 22px;
           }
         }
       }
       .regi-body {
         padding: 45px 70px 0px;
         @include mqsp {
-          padding: 30px 20px;
+          padding: 30px 20px 0;
         }
         label {
           display: block;
@@ -47,10 +51,10 @@
           font-weight: 500;
           font-size: 20px;
           letter-spacing: 0.1em;
-          margin-top: 40px;
+          margin-top: 30px;
           @include ssp{
             font-size: 16px;
-            margin-top: 30px;
+            margin-top: 20px;
           }
           &:first-child {
             margin-top: 0px;
@@ -74,7 +78,7 @@
           outline: unset;
           border: unset;
           border: 1px solid #C1C1C1;
-          padding: 12px 10px;
+          padding: 15px 10px;
           box-sizing: border-box;
           margin-top: 10px;
           &:focus{
@@ -214,7 +218,9 @@
               padding: 10px 0px;
             }
             @include ssp{
-              width: calc(50vw - 10px);
+              padding: 5px 0;
+              max-width: 135px;
+              width: 100%;
             }
             span {
               display: inline-block;
@@ -337,13 +343,16 @@
           font-size: 20px;
           letter-spacing: 0.1em;
           padding: 15px 60px;
-          margin: 60px auto 0;
+          margin: 40px auto 0;
           border-radius: 5px;
           -webkit-border-radius: 5px;
           -moz-border-radius: 5px;
           -ms-border-radius: 5px;
           -o-border-radius: 5px;
           background-color: #AE1679;
+            @include ssp{
+              margin: 50px auto 0;
+            }
         }
       }
       .regi-footer {
@@ -358,7 +367,7 @@
       }
     }
   }
-  
+
   .registration-edit {
     .regi-form {
       .regi-body {
@@ -381,11 +390,11 @@
         &-complete{
           width: 82%;
           margin: auto;
-          padding: 30px 0;
+          padding: 25px 0;
           @include ssp{
             width: 90%;
             margin: auto;
-            padding: 30px 0;
+            padding: 20px 0;
           }
           h2{
             color: #AE1679;
@@ -396,11 +405,12 @@
             line-height: 1.6;
             margin: 30px 0;
             @include ssp{
-              font-size: 16px; 
+              font-size: 16px;
+              margin: 0 0 15px;
             }
           }
           p{
-            margin-bottom: 35px;
+            margin-bottom: 15px;
             text-align: left;
             font-size: 14px;
           }
@@ -416,7 +426,7 @@
               padding: 15px 60px;
               max-width: 205px;
               width: 100%;
-              margin: 50px auto 0;
+              margin: 30px auto 0;
               border-radius: 5px;
               -webkit-border-radius: 5px;
               -moz-border-radius: 5px;
@@ -424,7 +434,7 @@
               -o-border-radius: 5px;
               background-color: #AE1679;
               @include ssp{
-                font-size: 16px; 
+                font-size: 16px;
               }
           }
           }
@@ -432,16 +442,16 @@
       }
     }
   }
-  
+
   ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #C1C1C1;
     opacity: 1; /* Firefox */
   }
-  
+
   :-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: #C1C1C1;
   }
-  
+
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: #C1C1C1;
   }

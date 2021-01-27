@@ -231,9 +231,10 @@ div{
   color: #383838;
   border-bottom: 2px solid #AE1679;
   margin-bottom: 40px;
+  padding-bottom: 5px;
     @include mqsp {
-      margin-bottom: 30px;
-      font-size: 24px;
+      margin-bottom: 25px;
+      font-size: 22px;
     }
 }
 
@@ -404,7 +405,7 @@ div{
     }
   }
   &-txt {
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     @include mqsp {
       margin-bottom: 15px;
     }
@@ -452,6 +453,12 @@ div{
   color: #ffffff;
   text-align: center;
   padding: 10px 0;
+  font-size: 10px;
+  margin-left: 123px;
+    @include mqsp {
+        font-size: 10px;
+        margin-left: 0;
+    }
 }
 
 
@@ -464,7 +471,7 @@ div{
   display: block;
   width: 190px;
   text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 8px;
   border-radius: 10px;
   margin: 20px auto 0;
 }

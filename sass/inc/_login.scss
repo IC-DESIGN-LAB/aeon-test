@@ -27,12 +27,18 @@
     @include mqsp {
       margin-top: 70px;
     }
+    @include ssp{
+      padding: 25px 0px 40px;
+    }
     .login-header {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       border-bottom: 1px solid #E1E1E1;
+        @include ssp{
+          padding-bottom: 20px;
+        }
       h2 {
         font-weight: bold;
-        font-size: 36px;
+        font-size: 32px;
         letter-spacing: 0.1em;
         @include ssp{
           font-size: 20px;
@@ -132,13 +138,17 @@
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       -o-border-radius: 10px;
+        @include mqsp {
+            padding: 20px 0 54px;
+        }
       h2 {
           font-size: 36px;
           font-weight: 600;
-          padding-bottom: 30px;
+          padding-bottom: 20px;
           border-bottom: 1px solid #C1C1C1;
           @include mqsp {
               font-size: 24px;
+              padding-bottom: 15px;
           }
       }
       p {
@@ -147,6 +157,7 @@
           padding: 35px 0;
           @include mqsp {
               font-size: 16px;
+              padding: 35px 0 0;
           }
       }
       .logout-close {
@@ -191,12 +202,15 @@
       margin-top: 70px;
     }
     .contact-header {
-      padding-bottom: 30px;
+      padding-bottom: 20px;
       border-bottom: 1px solid #E1E1E1;
+        @include ssp {
+          // padding-bottom: 20px;
+        }
       h2 {
         text-align: center;
         font-weight: bold;
-        font-size: 36px;
+        font-size: 32px;
         letter-spacing: 0.1em;
         @include mqsp {
           font-size: 24px;
@@ -223,7 +237,7 @@
         margin-top: 20px;
         @include mqsp {
           font-size: 16px;
-          margin-top: 40px;
+          margin-top: 30px;
         }
         &:first-of-type {
           margin-top: 30px;
@@ -262,7 +276,6 @@
         textarea {
           width: 100%;
           resize: none;
-          border-color: #AE1679;
         }
       }
       .contact-message ~ p {
@@ -293,7 +306,7 @@
           background-color: #AE1679;
           @include ssp {
             font-size: 14px;
-            margin: 50px auto 0;
+            margin: 30px auto 0;
           }
          }
       }

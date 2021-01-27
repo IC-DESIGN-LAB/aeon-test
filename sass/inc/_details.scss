@@ -1,12 +1,12 @@
- .subpage{
-    width: calc(100% - 250px);
-    margin-top: 90px;
-    margin-left: auto;
-    @include sp{
-        width: 100%;
-        margin-top: 0;
-        padding-top: 65px;
-    }
+    .subpage{
+        width: calc(100% - 250px);
+        margin-top: 160px;
+        margin-left: auto;
+        @include sp{
+            width: 100%;
+            margin-top: 0;
+            padding-top: 65px;
+        }
     &-l{
         &-hd{
             position: relative;
@@ -21,7 +21,7 @@
                 left: 0;
                 z-index: -1;
                 filter: blur(8px);
-                -webkit-filter: blur(5px);
+                -webkit-filter: blur(15px);
                 background-image: url(../img/vid-details-hd.png);
                 background-size: cover;
                 background-position: center center;
@@ -41,7 +41,7 @@
             width: 100%;
             margin: 35px auto 150px;
             @include ssp {
-                margin: 35px auto 90px;      
+                margin: 25px auto 60px;
             }
             .video{
                 &-details{
@@ -58,14 +58,14 @@
                                 padding-bottom: 5px;
                                 font-weight: 700;
                                 @include ssp{
-                                    font-size: 14px; 
+                                    font-size: 14px;
                                  }
                             }
                         }
                         h2{
                             max-width: 1280px;
                             width: 100%;
-                            margin: 23px auto 30px;
+                            margin: 25px auto 30px;
                             font-size: 24px;
                             padding: 15px;
                             background: #707070;
@@ -75,7 +75,8 @@
                             font-weight: bold;
                             font-family: Helvetica, sans-serif;
                             @include ssp{
-                                font-size: 20px; 
+                                font-size: 20px;
+                                margin: 25px auto 15px;
                             }
                         }
                     }
@@ -89,7 +90,7 @@
                             color: #000;
                             font-family: kozuka-gothic-pro, sans-serif;
                             @include ssp{
-                               font-size: 18px; 
+                               font-size: 18px;
                             }
                             span{
                                 font-size: 18px;
@@ -99,7 +100,7 @@
                                 padding-bottom: 10px;
                                 display: inline-block;
                                 @include ssp{
-                                   font-size: 14px; 
+                                   font-size: 14px;
                                 }
                             }
                         }
@@ -113,7 +114,8 @@
                                 margin-left: 13px;
                                 font-family: kozuka-gothic-pro, sans-serif;
                                 @include ssp{
-                                   font-size: 12px; 
+                                    font-size: 10px;
+                                    padding: 10px 0 5px;
                                 }
                             }
                         }
@@ -129,15 +131,16 @@
                             font-family: kozuka-gothic-pro, sans-serif;
                             @include ssp{
                                font-size: 14px;
-                               margin: 15px auto 40px;
+                               margin: 15px auto 30px;
                             }
                         }
                         &-02{
                             border: 1px solid #AE1679;
                             border-radius: 10px;
-                            padding: 20px 15px;
+                            padding: 20px 25px;
                             @include ssp{
-                                border-radius: 5px; 
+                                border-radius: 5px;
+                                padding: 10px 15px;
                              }
                             h2{
                                 font-size: 16px;
@@ -146,7 +149,7 @@
                                 color: #AE1679;
                                 margin-bottom: 10px;
                                 @include ssp{
-                                   font-size: 14px; 
+                                   font-size: 14px;
                                 }
                             }
                             ul{
@@ -158,13 +161,16 @@
                                     list-style-type: disc;
                                      margin-left: 12px;
                                     @include ssp{
-                                       font-size: 12px; 
+                                       font-size: 12px;
                                     }
                                 }
                             }
                         }
                         &-03{
                             padding: 30px 0 75px;
+                                @include ssp{
+                                    padding: 20px 0 45px;
+                                }
                             .video-details{
                                 &-price{
                                     text-align: center;
@@ -174,12 +180,12 @@
                                         font-weight: bold;
                                         color: #000;
                                         @include ssp{
-                                           font-size: 24px; 
+                                           font-size: 24px;
                                         }
                                         span{
                                             font-size: 18px;
                                             @include ssp{
-                                               font-size: 12px; 
+                                               font-size: 12px;
                                             }
                                         }
                                     }
@@ -197,7 +203,7 @@
                                         color: #fff;
                                         background: #AE1679;
                                         font-weight: bold;
-                                        border-radius: 10px;
+                                        border-radius: 5px;
                                         line-height: 1;
                                         @include ssp{
                                            padding: 15px 0;
@@ -233,13 +239,13 @@
                         margin: auto;
                         &-ttl{
                             h2{
-                                border-bottom: 2px solid #AE1679;    
+                                border-bottom: 2px solid #AE1679;
                                 text-align: left;
                                 font-size: 24px;
                                 font-weight: bold;
                                 font-family: kozuka-gothic-pro, sans-serif;
                                 @include ssp{
-                                   font-size: 18px; 
+                                   font-size: 18px;
                                 }
                             }
                         }
@@ -296,7 +302,7 @@
                                             margin-right: 4%;
                                         }
                                         @include ssp{
-                                            margin-right: 0; 
+                                            margin-right: 0;
                                         }
                                     }
                                     &:nth-child(2n){
@@ -353,3 +359,10 @@
         }
     }
  }
+
+.livepage{
+    margin-top: 90px;
+    @include mqsp {
+        margin-top: 0;
+    }
+}
