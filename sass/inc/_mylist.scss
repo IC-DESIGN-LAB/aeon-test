@@ -35,8 +35,8 @@
           width: 40%;
           margin: 0 3px;
           display: inline-block;
-          background: #fff;
-          color: #AE1679;
+          background: #AE1679;
+          color: #fff;
           border: 2px solid #AE1679;
           border-bottom: none;
           font-size: 20px;
@@ -53,8 +53,8 @@
           }
       }
       .tab-active {
-          background: #AE1679;
-          color: #fff;
+          background: #fff;
+          color: #AE1679;
       }
   }
   .submylist{
@@ -193,6 +193,6 @@
   }
 
 }
-#submylist-video-show {
+#submylist-live-show {
   display: none;
 }

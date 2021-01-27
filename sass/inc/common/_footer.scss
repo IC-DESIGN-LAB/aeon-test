@@ -1,4 +1,10 @@
 footer{
+    width: calc(100% - 250px);
+    margin-left: auto;
+    @include mqsp{
+         width: 100%;
+         margin: auto;
+        }
   .sns{
     background-color: #EDEDED;
     padding: 40px 0;
@@ -91,4 +97,33 @@ footer{
       }
     }
   }
+  .ftNav{
+      background-color: #EFEFEF;
+      font-size: 12px;
+      padding: 15px 30px 13px 0;
+      &-list{
+        display: flex;
+        max-width: 318px;
+        margin-left: auto;
+        &-item{
+          margin-right: 25px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+      }
+    }
+}
+
+.copy{
+  width: 100%;
+  background-color: #464646;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 10px;
+    @include mqsp {
+        font-size: 10px;
+        margin-left: 0;
+    }
 }
