@@ -14,7 +14,7 @@
       width: 560px;
       margin: 20px auto;
       background-color: #ffffff;
-      border-radius: 20px;
+      border-radius: 15px;
       padding: 30px;
       box-sizing: border-box;
       box-shadow: 4px 2px 17px -6px rgba(0,0,0,0.6);
@@ -25,7 +25,7 @@
       }
       @include mqsp {
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 8px;
       }
       &-thumb{
         text-align: center;
@@ -46,7 +46,7 @@
         margin-bottom: 5px;
         letter-spacing: 0.05em;
         @include mqsp {
-          font-size: 14px;
+          font-size: 12px;
         }
       }
       &-ttl{
@@ -167,7 +167,7 @@ div{
     max-width: 1280px;
     margin: 0 auto 60px;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 2px solid #AE1679;
     box-sizing: border-box;
     box-shadow: 4px 5px 16px -9px rgba(0,0,0,0.6);
@@ -351,6 +351,9 @@ div{
       position: absolute;
       z-index: -1;
       border-radius: 10px;
+        @include mqsp {
+          border-radius: px;
+        }
     }
       @media (max-width: 1150px) {
         width: 44%;
@@ -375,6 +378,9 @@ div{
         border-radius: 10px;
         width: 100%;
         vertical-align: bottom;
+        @include mqsp {
+          border-radius: 5px;
+        }
       }
     }
       &-date{
@@ -448,6 +454,7 @@ div{
 }
 
 .btn{
+  position: relative;
   font-size: 18px;
   color: #ffffff;
   font-weight: 600;
@@ -458,4 +465,66 @@ div{
   padding: 10px 0 8px;
   border-radius: 10px;
   margin: 20px auto 0;
+  overflow: hidden;
+    @include mqsp {
+      font-size: 14px;
+      border-radius: 5px;
+      margin: 25px auto 0;
+    }
+    &:focus{
+      outline: none;
+      span::after{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100px;
+        height: 100px;
+        margin-top: -50px;
+        margin-left:-50px;
+        content: "";
+        background: #EA54B6;
+        border-radius: 50%;
+        opacity: 0;
+        animation: ripple 1s 1 ease-out;
+      }
+      @keyframes ripple {
+        0% {
+          opacity: 0.5;
+          transform: scale(0.0);
+        }
+        100% {
+          opacity: 0;
+          transform: scale(4.0);
+        }
+    }
+  }
+}
+
+//loading//
+#loader-bg {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #AE1679;
+  z-index: 9999;
+}
+#loader {
+  display: block;
+  position: fixed;
+  // top: 50%;
+  // left: 50%;
+  width:400px;
+  // height: 200px;
+  // margin-top: -100px;
+  // margin-left: -100px;
+  @extend %center;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+    @include mqsp {
+      width: 250px;
+    }
 }

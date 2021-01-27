@@ -96,51 +96,55 @@
     })(document);
   </script>
 </head>
-
 <body>
+  <div id="loader-bg">
+    <div id="loader">
+      <img src="img/logo.svg">
+    </div>
+  </div>
   <header id="header" class="header">
-      <div class="header-left">
-          <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1>
-          <nav class="header-menu">
-          <ul class="header-menuArea">
-              <li class="header-menuArea-item"><a href="index.html">ホーム</a></li>
-              <li class="header-menuArea-item"><a href="live-list.html">ライブ配信</a></li>
-              <li class="header-menuArea-item"><a href="list.html">講座動画</a></li>
-              <li class="header-menuArea-item"><a href="cart.html">カート</a></li>
-              <li class="header-menuArea-item"><a href="news.html">お知らせ</a></li>
+    <div class="header-left">
+      <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1>
+      <nav class="header-menu">
+        <ul class="header-menuArea">
+          <li class="header-menuArea-item"><a href="index.html">ホーム</a></li>
+          <li class="header-menuArea-item"><a href="live-list.html">ライブ配信</a></li>
+          <li class="header-menuArea-item"><a href="list.html">講座動画</a></li>
+          <li class="header-menuArea-item"><a href="cart.html">カート</a></li>
+          <li class="header-menuArea-item"><a href="news.html">お知らせ</a></li>
+        </ul>
+        <ul class="header-menuArea authc">
+          <li class="header-menuArea-item"><a href="register.html">新規会員登録</a></li>
+          <li class="header-menuArea-item"><a href="login.html">ログイン</a></li>
+        </ul>
+        <div class="header-sns">
+          <p class="header-sns-ttl">Follow us</p>
+          <ul class="header-snsArea">
+            <li class="header-snsArea-item"><a href=""><img src="img/twitter.svg" alt="twitter"></a></li>
+            <li class="header-snsArea-item"><a href=""><img src="img/facebook.svg" alt="FACEBOOK"></a></li>
+            <li class="header-snsArea-item"><a href=""><img src="img/line.svg" alt="LINE"></a></li>
           </ul>
-          <ul class="header-menuArea authc">
-              <li class="header-menuArea-item"><a href="register.html">新規会員登録</a></li>
-              <li class="header-menuArea-item"><a href="login.html">ログイン</a></li>
-          </ul>
-          <div class="header-sns">
-              <p class="header-sns-ttl">Follow us</p>
-              <ul class="header-snsArea">
-                  <li class="header-snsArea-item"><a href=""><img src="img/twitter.svg" alt="twitter"></a></li>
-                  <li class="header-snsArea-item"><a href=""><img src="img/facebook.svg" alt="FACEBOOK"></a></li>
-                  <li class="header-snsArea-item"><a href=""><img src="img/line.svg" alt="LINE"></a></li>
-              </ul>
-          </div>
-          <ul class="header-menuArea">
-              <li class="header-menuArea-item"><a href="https://www.aeonculture.jp/user_data/packages/default/ds/data/pdf/aeonculture_privacypolicy20200325.pdf" target="_blank">プライバシーポリシー</a></li>
-              <li class="header-menuArea-item"><a href="contact.html">お問い合わせ</a></li>
-          </ul>
-          </nav>
+        </div>
+        <ul class="header-menuArea">
+          <li class="header-menuArea-item"><a href="https://www.aeonculture.jp/user_data/packages/default/ds/data/pdf/aeonculture_privacypolicy20200325.pdf" target="_blank">プライバシーポリシー</a></li>
+          <li class="header-menuArea-item"><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header-right">
+      <ul class="header-authcArea isPc">
+        <li class="header-authcArea-item"><a href="register.html">新規会員登録</a></li>
+        <li class="header-authcArea-item"><a href="login.html">ログイン</a></li>
+      </ul>
+      <div class="sp-nav isSp d-fl">
+        <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1>
+        <ul class="header-authcArea">
+          <li class="header-authcArea-item"><a href="register.html"><img src="img/registration.svg" alt="会員登録">会員登録</a></li>
+          <li class="header-authcArea-item"><a href="login.html"><img src="img/login.svg" class="login-img" alt="ログイン">ログイン</a>
+          </li>
+        </ul>
       </div>
-      <div class="header-right">
-          <ul class="header-authcArea isPc">
-          <li class="header-authcArea-item"><a href="register.html">新規会員登録</a></li>
-          <li class="header-authcArea-item"><a href="login.html">ログイン</a></li>
-          </ul>
-          <div class="sp-nav isSp d-fl">
-          <h1 class="header-logo"><a href="index.html"><img src="img/logo.svg" alt=""></a></h1>
-          <ul class="header-authcArea">
-              <li class="header-authcArea-item"><a href="register.html"><img src="img/registration.svg" alt="会員登録">会員登録</a></li>
-              <li class="header-authcArea-item"><a href="login.html"><img src="img/login.svg" class="login-img" alt="ログイン">ログイン</a>
-              </li>
-          </ul>
-          </div>
-      </div>
+    </div>
   </header>
   <main>
     <div class="contentsAra">
@@ -516,7 +520,7 @@
             </li>
           </ul>
         </div>
-        <a href="live-list.html" class="btn isPc">もっと見る</a>
+        <a href="live-list.html" class="btn" tabindex="1"><span>もっと見る</span></a>
       </div>
       <div class="video wapper">
         <h2 class="mainTtl">講座動画</h2>
@@ -632,7 +636,7 @@
             </li>
           </ul>
         </div>
-        <a href="list.html" class="btn isPc">もっと見る</a>
+        <a href="list.html" class="btn" tabindex="1"><span>もっと見る</span></a>
       </div>
     </div><!-- contentsAra -->
   </main>
@@ -670,6 +674,32 @@
   </footer>
   <script src="slick/slick.min.js"></script>
   <script src="js/app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script>
+    $(function () {
+      var h = $(window).height();
+
+      $('#wrap').css('display', 'none');
+      $('#loader-bg ,#loader').css('display', 'block');
+    });
+
+    $(window).load(function () { //全ての読み込みが完了したら実行
+      $('#loader-bg').delay(900).fadeOut(800);
+      $('#loader').delay(600).fadeOut(300);
+      $('#wrap').css('display', 'block');
+    });
+
+    //10秒たったら強制的にロード画面を非表示
+    $(function () {
+      setTimeout('stopload()', 10000);
+    });
+
+    function stopload() {
+      $('#wrap').css('display', 'block');
+      $('#loader-bg').delay(1200).fadeOut(1700);
+      $('#loader').delay(800).fadeOut(500);
+    }
+  </script>
 </body>
 
 </html>

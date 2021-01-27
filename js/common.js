@@ -1,23 +1,23 @@
 jQuery(function ($) {
-  var height = $(".ft-f-navi").outerHeight(true);
-  $(".ft-inner").css("padding-bottom", height + 0);//10pxだけ余裕をもたせる
+	var height = $(".ft-f-navi").outerHeight(true);
+	$(".ft-inner").css("padding-bottom", height + 0);//10pxだけ余裕をもたせる
 });
 /*--------------------------------------------------------------------------*
- *  
+ *
  *  footerFixed.js
- *  
- *  MIT-style license. 
- *  
+ *
+ *  MIT-style license.
+ *
  *  2007 Kazuma Nishihata [to-R]
  *  http://blog.webcreativepark.net
- *  
+ *
  *--------------------------------------------------------------------------*/
 
-new function(){
-	
+new function () {
+
 	var footerId = "footer";
 	//メイン
-	function footerFixed(){
+	function footerFixed() {
 		//ドキュメントの高さ
 		var dh = document.getElementsByTagName("body")[0].clientHeight;
 		//フッターのtopからの位置
@@ -26,53 +26,84 @@ new function(){
 		//フッターの高さ
 		var fh = document.getElementById(footerId).offsetHeight;
 		//ウィンドウの高さ
-		if (window.innerHeight){
+		if (window.innerHeight) {
 			var wh = window.innerHeight;
-		}else if(document.documentElement && document.documentElement.clientHeight != 0){
+		} else if (document.documentElement && document.documentElement.clientHeight != 0) {
 			var wh = document.documentElement.clientHeight;
 		}
-		if(ft+fh<wh){
+		if (ft + fh < wh) {
 			document.getElementById(footerId).style.position = "relative";
-			document.getElementById(footerId).style.top = (wh-fh-ft-1)+"px";
-		}
-	}
-	
-	//文字サイズ
-	function checkFontSize(func){
-	
-		//判定要素の追加	
-		var e = document.createElement("div");
-		var s = document.createTextNode("S");
-		e.appendChild(s);
-		e.style.visibility="hidden"
-		e.style.position="absolute"
-		e.style.top="0"
-		document.body.appendChild(e);
-		var defHeight = e.offsetHeight;
-		
-		//判定関数
-		function checkBoxSize(){
-			if(defHeight != e.offsetHeight){
-				func();
-				defHeight= e.offsetHeight;
-			}
-		}
-		setInterval(checkBoxSize,1000)
-	}
-	
-	//イベントリスナー
-	function addEvent(elm,listener,fn){
-		try{
-			elm.addEventListener(listener,fn,false);
-		}catch(e){
-			elm.attachEvent("on"+listener,fn);
+			document.getElementById(footerId).style.top = (wh - fh - ft - 1) + "px";
 		}
 	}
 
-	addEvent(window,"load",footerFixed);
-	addEvent(window,"load",function(){
+	//文字サイズ
+	function checkFontSize(func) {
+
+		//判定要素の追加
+		var e = document.createElement("div");
+		var s = document.createTextNode("S");
+		e.appendChild(s);
+		e.style.visibility = "hidden"
+		e.style.position = "absolute"
+		e.style.top = "0"
+		document.body.appendChild(e);
+		var defHeight = e.offsetHeight;
+
+		//判定関数
+		function checkBoxSize() {
+			if (defHeight != e.offsetHeight) {
+				func();
+				defHeight = e.offsetHeight;
+			}
+		}
+		setInterval(checkBoxSize, 1000)
+	}
+
+	//イベントリスナー
+	function addEvent(elm, listener, fn) {
+		try {
+			elm.addEventListener(listener, fn, false);
+		} catch (e) {
+			elm.attachEvent("on" + listener, fn);
+		}
+	}
+
+	addEvent(window, "load", footerFixed);
+	addEvent(window, "load", function () {
 		checkFontSize(footerFixed);
 	});
-	addEvent(window,"resize",footerFixed);
-	
+	addEvent(window, "resize", footerFixed);
+
 }
+
+////btn
+// $(function () {
+// 	var $touch = $(".btn");
+// 	$touch.click(function () {
+// 		$touch.addClass('active');
+// 		setTimeout(function () {
+// 			$touch.removeClass('active');
+// 		}, 300);
+// 	});
+// });
+
+//////a
+$(function () {
+	//'#'から始まるhrefを持つaタグ、target属性を持つaタグを除く
+	$('a:not([href^="#"]):not([target]).btn').on('click', function (e) {
+		//クリック時の挙動を停止
+		e.preventDefault();
+		//href属性の属性情報を取得
+		url = $(this).attr('href');
+		if (url !== '') {
+			//bodyタグへ任意のクラスを追加
+			$('body').addClass('class_name');
+			//setTimeOutを用いて500s後にurl遷移を実行
+			setTimeout(function () {
+				window.location = url;
+			}, 600);
+		}
+		return false;
+	});
+});
