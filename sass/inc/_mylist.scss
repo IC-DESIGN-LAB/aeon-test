@@ -163,6 +163,14 @@
                         text-decoration: underline;
                         text-decoration-color: #AE1679;
                         -moz-text-decoration-color: #AE1679;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                            a{
+                                text-decoration: #B11679;
+                            }
                         @include ssp{
                             display: -webkit-box;
                             -webkit-box-orient: vertical;
