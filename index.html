@@ -59,12 +59,16 @@
   <meta property="og:site_name" content="LE SOUK HOLIDAY | ルスーク ホリデイ 2021年2月9日ECサイトオープン！" />
   <meta property="og:image" content="https://lesoukholiday.jp/img/ogp.png"> -->
 
-  <link rel="stylesheet" href="css/style.min.css">
   <link rel="stylesheet" type="text/css" href="slick/slick.min.css" />
-  <link rel="stylesheet" href="slick/slick-theme.min.css">
+    <link rel="stylesheet" href="slick/slick-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
 
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
   <script src="js/common.js"></script>
+  <!-- jQuery Modal -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  
   <script>
     (function (d) {
       var config = {
@@ -99,7 +103,7 @@
 <body>
   <div id="loader-bg">
     <div id="loader">
-      <img src="img/logo.svg">
+      <img src="img/logo.svg" alt="">
     </div>
   </div>
   <header id="header" class="header">
@@ -151,7 +155,7 @@
       <div class="main">
         <div class="slider">
           <div class="slider-item">
-            <a href="details.html">
+            <div class="slider-item-inn">
               <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
@@ -163,11 +167,13 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
           <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
+            <div class="slider-item-inn">
+              <figure class="slider-item-thumb"><img src="img/main_img02.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
                 <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
@@ -178,11 +184,13 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
           <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
+            <div class="slider-item-inn">
+              <figure class="slider-item-thumb"><img src="img/main_img03.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
                 <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
@@ -193,11 +201,13 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
           <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
+            <div class="slider-item-inn">
+              <figure class="slider-item-thumb"><img src="img/main_img04.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
                 <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
@@ -208,11 +218,13 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
           <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
+            <div class="slider-item-inn">
+              <figure class="slider-item-thumb"><img src="img/main_img05.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
                 <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
@@ -223,11 +235,13 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
           <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
+            <div class="slider-item-inn">
+              <figure class="slider-item-thumb"><img src="img/main_img06.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
                 <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
@@ -238,11 +252,13 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
           <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
+            <div class="slider-item-inn">
+              <figure class="slider-item-thumb"><img src="img/main_img07.jpg" alt=""></figure>
               <dl class="slider-item-detail">
                 <dt class="slider-item-name">Yoga Yumiko</dt>
                 <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
@@ -253,67 +269,9 @@
                 <li>#スポーツ</li>
                 <li>#ダイエット</li>
               </ul>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
-              <dl class="slider-item-detail">
-                <dt class="slider-item-name">Yoga Yumiko</dt>
-                <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
-                  1日10分で体は劇的に変わる☆</dd>
-              </dl>
-              <ul class="slider-item-cate">
-                <li>#YOGA</li>
-                <li>#スポーツ</li>
-                <li>#ダイエット</li>
-              </ul>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
-              <dl class="slider-item-detail">
-                <dt class="slider-item-name">Yoga Yumiko</dt>
-                <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
-                  1日10分で体は劇的に変わる☆</dd>
-              </dl>
-              <ul class="slider-item-cate">
-                <li>#YOGA</li>
-                <li>#スポーツ</li>
-                <li>#ダイエット</li>
-              </ul>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
-              <dl class="slider-item-detail">
-                <dt class="slider-item-name">Yoga Yumiko</dt>
-                <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
-                  1日10分で体は劇的に変わる☆</dd>
-              </dl>
-              <ul class="slider-item-cate">
-                <li>#YOGA</li>
-                <li>#スポーツ</li>
-                <li>#ダイエット</li>
-              </ul>
-            </a>
-          </div>
-          <div class="slider-item">
-            <a href="details.html">
-              <figure class="slider-item-thumb"><img src="img/main_img01.jpg" alt=""></figure>
-              <dl class="slider-item-detail">
-                <dt class="slider-item-name">Yoga Yumiko</dt>
-                <dd class="slider-item-ttl">朝ヨガで脳と体スッキリ！<br>
-                  1日10分で体は劇的に変わる☆</dd>
-              </dl>
-              <ul class="slider-item-cate">
-                <li>#YOGA</li>
-                <li>#スポーツ</li>
-                <li>#ダイエット</li>
-              </ul>
-            </a>
+              <a href="#ex1" rel="modal:open" class="modal-open"></a>
+              <a href="details.html" class="nomodal-sp"></a>
+            </div>
           </div>
         </div><!-- slider -->
       </div>
@@ -341,7 +299,9 @@
               <a href="details.html">
                 <figure class="scroll-item-thum">
                   <img src="img/mylist_img01.jpg" alt="">
-                  <a href="" class="scroll-item-thum-more">
+                  <a href="#ex1" rel="modal:open" class="modal-open">
+                  </a>
+                  <a href="details.html" class="scroll-item-thum-more">
                     <span></span><span></span><span></span>
                   </a>
                 </figure>
@@ -350,8 +310,10 @@
             <li class="scroll-item">
               <a href="details.html">
                 <figure class="scroll-item-thum">
-                  <img src="img/mylist_img01.jpg" alt="">
-                  <a href="" class="scroll-item-thum-more">
+                  <img src="img/mylist_img02.jpg" alt="">
+                  <a href="#ex1" rel="modal:open" class="modal-open">
+                  </a>
+                  <a href="details.html" class="scroll-item-thum-more">
                     <span></span><span></span><span></span>
                   </a>
                 </figure>
@@ -360,8 +322,10 @@
             <li class="scroll-item">
               <a href="details.html">
                 <figure class="scroll-item-thum">
-                  <img src="img/mylist_img01.jpg" alt="">
-                  <a href="" class="scroll-item-thum-more">
+                  <img src="img/mylist_img03.jpg" alt="">
+                  <a href="#ex1" rel="modal:open" class="modal-open">
+                  </a>
+                  <a href="details.html" class="scroll-item-thum-more">
                     <span></span><span></span><span></span>
                   </a>
                 </figure>
@@ -370,8 +334,10 @@
             <li class="scroll-item">
               <a href="details.html">
                 <figure class="scroll-item-thum">
-                  <img src="img/mylist_img01.jpg" alt="">
-                  <a href="" class="scroll-item-thum-more">
+                  <img src="img/mylist_img04.jpg" alt="">
+                  <a href="#ex1" rel="modal:open" class="modal-open">
+                  </a>
+                  <a href="details.html" class="scroll-item-thum-more">
                     <span></span><span></span><span></span>
                   </a>
                 </figure>
@@ -380,8 +346,10 @@
             <li class="scroll-item">
               <a href="details.html">
                 <figure class="scroll-item-thum">
-                  <img src="img/mylist_img01.jpg" alt="">
-                  <a href="" class="scroll-item-thum-more">
+                  <img src="img/mylist_img05.jpg" alt="">
+                  <a href="#ex1" rel="modal:open" class="modal-open">
+                  </a>
+                  <a href="details.html" class="scroll-item-thum-more">
                     <span></span><span></span><span></span>
                   </a>
                 </figure>
@@ -390,8 +358,10 @@
             <li class="scroll-item">
               <a href="details.html">
                 <figure class="scroll-item-thum">
-                  <img src="img/mylist_img01.jpg" alt="">
-                  <a href="" class="scroll-item-thum-more">
+                  <img src="img/mylist_img06.jpg" alt="">
+                  <a href="#ex1" rel="modal:open" class="modal-open">
+                  </a>
+                  <a href="details.html" class="scroll-item-thum-more">
                     <span></span><span></span><span></span>
                   </a>
                 </figure>
@@ -405,118 +375,130 @@
         <div class="detail-inner">
           <ul class="detail-list">
             <li class="detail-item">
-              <a href="live-details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                  <p class="detail-thumb-date">2020/12/21</p>
-                </div>
-                <div class="detail-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>LIVE</span><date>2020/12/21</date></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="live-details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="live-details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                  <p class="detail-thumb-date">2020/12/21</p>
-                </div>
-                <div class="detail-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img02.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>LIVE</span><date>2020/12/21</date></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="live-details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="live-details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                  <p class="detail-thumb-date">2020/12/21</p>
-                </div>
-                <div class="detail-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img03.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>LIVE</span><date>2020/12/21</date></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="live-details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="live-details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                  <p class="detail-thumb-date">2020/12/21</p>
-                </div>
-                <div class="detail-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img04.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>LIVE</span><date>2020/12/21</date></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="live-details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="live-details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                  <p class="detail-thumb-date">2020/12/21</p>
-                </div>
-                <div class="detail-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img05.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>LIVE</span><date>2020/12/21</date></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="live-details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="live-details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                  <p class="detail-thumb-date">2020/12/21</p>
-                </div>
-                <div class="detail-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img06.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>LIVE</span><date>2020/12/21</date></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="live-details.html"></a>
+              </div>
             </li>
           </ul>
         </div>
@@ -527,118 +509,500 @@
         <div class="detail-inner">
           <ul class="detail-list">
             <li class="detail-item">
-              <a href="details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                </div>
-                <div class="detail-txtArea video-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img07.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>MOVIE</span></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex2" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                </div>
-                <div class="detail-txtArea video-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img08.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>MOVIE</span></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex2" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex2" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                </div>
-                <div class="detail-txtArea video-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img09.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>MOVIE</span></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex2" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                </div>
-                <div class="detail-txtArea video-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img10.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>MOVIE</span></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex2" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex2" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                </div>
-                <div class="detail-txtArea video-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img11.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>MOVIE</span></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex2" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="details.html"></a>
+              </div>
             </li>
             <li class="detail-item">
-              <a href="details.html">
-                <div class="detail-thumb">
-                  <figure><img src="img/live_img01.jpg" alt=""></figure>
-                </div>
-                <div class="detail-txtArea video-txtArea">
-                  <dl class="detail-txt">
-                    <dt class="detail-txt-name">Yoga Yumiko</dt>
-                    <dd class="detail-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
-                  </dl>
-                  <ul class="detail-tag">
-                    <li class="detail-tag-item">#YOGA</li>
-                    <li class="detail-tag-item">#スポーツ</li>
-                    <li class="detail-tag-item">#ダイエット</li>
+              <div class="detail-item-inn">
+                <div class="detail-item-thumb">
+                  <figure><img src="img/liver-img12.jpg" alt=""></figure>
+                  <p class="detail-item-thumb-date"><span>MOVIE</span></p>
+                  <ul class="detail-item-thumb-icon d-fl">
+                      <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                      <li><a href="#ex2" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
                   </ul>
                 </div>
-              </a>
+                <div class="detail-item-txtArea">
+                  <dl class="detail-item-txt">
+                      <dt class="detail-item-txt-name">田中 太郎</dt>
+                      <dd class="detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                      <dd class="detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                  </dl>
+                  <a href="#ex2" rel="modal:open" class="modal-open"></a>
+                </div>
+                <a class="nomodal-sp" href="details.html"></a>
+              </div>
             </li>
           </ul>
         </div>
         <a href="list.html" class="btn" tabindex="1"><span>もっと見る</span></a>
       </div>
     </div><!-- contentsAra -->
+    <!-- modal -->
+    <article id="ex1" class="liver-detail-item-modal modal">
+      <div class="modal-inn">
+          <div class="modal-player-thumb">
+              <figure><img src="img/liver-img01.jpg" alt=""></figure>
+          </div>
+          <div class="modal-days">
+            <p>2020/12/21 16:00〜配信</p>
+          </div>
+          <div class="modal-player-content">
+              <div class="modal-player-content-01">   
+                  <div class="modal-player-content-hd">
+                      <h2><span class="prof">講師</span>田中 真希子</h2>
+                  </div>
+                  <div class="modal-player-content-01-wrap">
+                      <h3>現役シリコンバレーエンジニアが教えるPython 3 入門 + 応用 +アメリカのシリコンバレー流コードスタイル</h3>
+                      <ul class="modal-player-content-tag d-fl">
+                          <li># YOGA</li>
+                          <li># スポーツ</li>
+                          <li># ダイエット</li>
+                          <li># YOGA</li>
+                          <li># スポーツ</li>
+                          <li># ダイエット</li>
+                      </ul>
+                      <p>講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。</p>
+                  </div>
+                  <div class="modal-player-content-01-price">
+                      <h3>￥24,000 <span>（税込）</span></h3>
+                      <div class="modal-player-content-01-price-btn d-fl">
+                          <div class="modal-player-add-to-cart">
+                              <a href="cart.html">カートに入れる</a>
+                          </div>
+                          <div class="modal-player-add-fav">
+                              <a href="cart.html"><img src="img/add-fav.svg" alt=""></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-player-content-02">
+                  <div class="modal-player-content-hd">
+                      <h2>講座内容</h2>
+                  </div>
+                  <div class="modal-player-content-02-wrap">
+                      <ul class="modal-player-content-materia">
+                          <li>Python環境の設定</li>
+                          <li>Pythonの基本コーディング練習</li>
+                          <li>入門編の終了、応用編に行く前に簡単なアプリケーションの演習</li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="modal-player-content-03">
+                  <div class="modal-player-content-hd">
+                      <h2>講師紹介</h2>
+                  </div>
+                  <div class="modal-player-content-03-wrap">
+                      <div class="modal-player-content-tutor d-fl">
+                          <div class="tutor-profile-img">
+                              <figure>
+                                  <img src="img/tutor-profile-img-01.png" alt="">
+                              </figure>
+                          </div>
+                          <div class="tutor-profile-info">
+                              <h2 class="name">田中  真希子</h2>
+                              <h3 class="post">ヨガインストラクター</h3>
+                              <ul class="d-fl">
+                                  <li><a href="twitter.com"><img src="img/modal-icon-tw.svg" alt=""></a></li>
+                                  <li><a href="twitter.com"><img src="img/modal-icon-insta.svg" alt=""></a></li>
+                                  <li><a href="twitter.com"><img src="img/modal-icon-fb.svg" alt=""></a></li>
+                              </ul>
+                          </div>
+                      </div>
+                      <div class="modal-player-content-tutor-message">
+                          <p>説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。<br><br>○○○○資格取得 / ○○○○資格取得 / ○○○○公認インストラクター / ○○○○公認インストラクター / ○○○○公認インストラクター / ○○○○公認インストラクター</p>
+                      </div>
+                      <div class="modal-player-content-01-price">
+                          <div class="modal-player-content-01-price-btn d-fl">
+                              <div class="modal-player-add-to-cart">
+                                  <a href="cart.html">カートに入れる</a>
+                              </div>
+                              <div class="modal-player-add-fav">
+                                  <a href="cart.html"><img src="img/add-fav.svg" alt=""></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-player-content-04">
+                  <div class="modal-player-content-hd">
+                      <h2>オススメ動画</h2>
+                  </div>
+                  <div class="modal-player-content-04-wrap">
+                      <ul class="d-fl">
+                          <li class="liver-detail-item">
+                              <div class="liver-detail-item-inn">
+                                  <div class="liver-detail-item-thumb">
+                                      <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                      <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                      <ul class="liver-detail-item-thumb-icon d-fl">
+                                          <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                          <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="liver-detail-item-txtArea">
+                                      <dl class="liver-detail-item-txt">
+                                          <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                          <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                          <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                      </dl>
+                                      <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                  </div>
+                                  <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                              </div>
+                          </li>
+                          <li class="liver-detail-item">
+                              <div class="liver-detail-item-inn">
+                                  <div class="liver-detail-item-thumb">
+                                      <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                      <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                      <ul class="liver-detail-item-thumb-icon d-fl">
+                                          <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                          <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="liver-detail-item-txtArea">
+                                      <dl class="liver-detail-item-txt">
+                                          <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                          <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                          <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                      </dl>
+                                      <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                  </div>
+                                  <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                              </div>
+                          </li>
+                          <li class="liver-detail-item">
+                              <div class="liver-detail-item-inn">
+                                  <div class="liver-detail-item-thumb">
+                                      <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                      <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                      <ul class="liver-detail-item-thumb-icon d-fl">
+                                          <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                          <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="liver-detail-item-txtArea">
+                                      <dl class="liver-detail-item-txt">
+                                          <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                          <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                          <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                      </dl>
+                                      <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                  </div>
+                                  <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                              </div>
+                          </li>
+                          <li class="liver-detail-item">
+                              <div class="liver-detail-item-inn">
+                                  <div class="liver-detail-item-thumb">
+                                      <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                      <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                      <ul class="liver-detail-item-thumb-icon d-fl">
+                                          <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                          <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                      </ul>
+                                  </div>
+                                  <div class="liver-detail-item-txtArea">
+                                      <dl class="liver-detail-item-txt">
+                                          <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                          <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                          <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                      </dl>
+                                      <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                  </div>
+                                  <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                              </div>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </article>
+  <!-- modal -->
+   <!-- modal -->
+   <article id="ex2" class="liver-detail-item-modal modal">
+    <div class="modal-inn">
+        <div class="modal-player-thumb">
+            <figure><img src="img/liver-img01.jpg" alt=""></figure>
+        </div>
+        <div class="modal-player-content">
+            <div class="modal-player-content-01">   
+                <div class="modal-player-content-hd">
+                    <h2><span class="prof">講師</span>田中 真希子</h2>
+                </div>
+                <div class="modal-player-content-01-wrap">
+                    <h3>現役シリコンバレーエンジニアが教えるPython 3 入門 + 応用 +アメリカのシリコンバレー流コードスタイル</h3>
+                    <ul class="modal-player-content-tag d-fl">
+                        <li># YOGA</li>
+                        <li># スポーツ</li>
+                        <li># ダイエット</li>
+                        <li># YOGA</li>
+                        <li># スポーツ</li>
+                        <li># ダイエット</li>
+                    </ul>
+                    <p>講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。講座の説明文が入ります。</p>
+                </div>
+                <div class="modal-player-content-01-price">
+                    <h3>￥24,000 <span>（税込）</span></h3>
+                    <div class="modal-player-content-01-price-btn d-fl">
+                        <div class="modal-player-add-to-cart">
+                            <a href="cart.html">カートに入れる</a>
+                        </div>
+                        <div class="modal-player-add-fav">
+                            <a href="cart.html"><img src="img/add-fav.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-player-content-02">
+                <div class="modal-player-content-hd">
+                    <h2>講座内容</h2>
+                </div>
+                <div class="modal-player-content-02-wrap">
+                    <ul class="modal-player-content-materia">
+                        <li>Python環境の設定</li>
+                        <li>Pythonの基本コーディング練習</li>
+                        <li>入門編の終了、応用編に行く前に簡単なアプリケーションの演習</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-player-content-03">
+                <div class="modal-player-content-hd">
+                    <h2>講師紹介</h2>
+                </div>
+                <div class="modal-player-content-03-wrap">
+                    <div class="modal-player-content-tutor d-fl">
+                        <div class="tutor-profile-img">
+                            <figure>
+                                <img src="img/tutor-profile-img-01.png" alt="">
+                            </figure>
+                        </div>
+                        <div class="tutor-profile-info">
+                            <h2 class="name">田中  真希子</h2>
+                            <h3 class="post">ヨガインストラクター</h3>
+                            <ul class="d-fl">
+                                <li><a href="twitter.com"><img src="img/modal-icon-tw.svg" alt=""></a></li>
+                                <li><a href="twitter.com"><img src="img/modal-icon-insta.svg" alt=""></a></li>
+                                <li><a href="twitter.com"><img src="img/modal-icon-fb.svg" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal-player-content-tutor-message">
+                        <p>説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。説明文が入ります。<br><br>○○○○資格取得 / ○○○○資格取得 / ○○○○公認インストラクター / ○○○○公認インストラクター / ○○○○公認インストラクター / ○○○○公認インストラクター</p>
+                    </div>
+                    <div class="modal-player-content-01-price">
+                        <div class="modal-player-content-01-price-btn d-fl">
+                            <div class="modal-player-add-to-cart">
+                                <a href="cart.html">カートに入れる</a>
+                            </div>
+                            <div class="modal-player-add-fav">
+                                <a href="cart.html"><img src="img/add-fav.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-player-content-04">
+                <div class="modal-player-content-hd">
+                    <h2>オススメ動画</h2>
+                </div>
+                <div class="modal-player-content-04-wrap">
+                    <ul class="d-fl">
+                        <li class="liver-detail-item">
+                            <div class="liver-detail-item-inn">
+                                <div class="liver-detail-item-thumb">
+                                    <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                    <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                    <ul class="liver-detail-item-thumb-icon d-fl">
+                                        <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                        <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="liver-detail-item-txtArea">
+                                    <dl class="liver-detail-item-txt">
+                                        <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                        <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                        <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                    </dl>
+                                    <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                </div>
+                                <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                            </div>
+                        </li>
+                        <li class="liver-detail-item">
+                            <div class="liver-detail-item-inn">
+                                <div class="liver-detail-item-thumb">
+                                    <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                    <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                    <ul class="liver-detail-item-thumb-icon d-fl">
+                                        <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                        <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="liver-detail-item-txtArea">
+                                    <dl class="liver-detail-item-txt">
+                                        <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                        <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                        <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                    </dl>
+                                    <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                </div>
+                                <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                            </div>
+                        </li>
+                        <li class="liver-detail-item">
+                            <div class="liver-detail-item-inn">
+                                <div class="liver-detail-item-thumb">
+                                    <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                    <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                    <ul class="liver-detail-item-thumb-icon d-fl">
+                                        <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                        <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="liver-detail-item-txtArea">
+                                    <dl class="liver-detail-item-txt">
+                                        <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                        <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                        <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                    </dl>
+                                    <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                </div>
+                                <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                            </div>
+                        </li>
+                        <li class="liver-detail-item">
+                            <div class="liver-detail-item-inn">
+                                <div class="liver-detail-item-thumb">
+                                    <figure><img src="img/liver-img01.jpg" alt=""></figure>
+                                    <p class="liver-detail-item-thumb-date"><span>MOVIE</span></p>
+                                    <ul class="liver-detail-item-thumb-icon d-fl">
+                                        <li><a href=""><img src="img/d-cart-icon.png" alt=""></a></li>
+                                        <li><a href="#ex1" rel="modal:open"><img src="img/d-link-icon.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="liver-detail-item-txtArea">
+                                    <dl class="liver-detail-item-txt">
+                                        <dt class="liver-detail-item-txt-name">田中 太郎</dt>
+                                        <dd class="liver-detail-item-txt-ttl">朝ヨガで脳と体スッキリ！1日10分で体は劇的に変わる☆</dd>
+                                        <dd class="liver-detail-item-txt-text">Web知識、Photoshop、Webグラフィックデザイン、HTML、CSS、実践的なコーディングなど、Webデザイナーとして働いたり、自分１人でサイトを作り上…</dd>
+                                    </dl>
+                                    <a href="#ex1" rel="modal:open" class="modal-open"></a>
+                                </div>
+                                <a class="liver-detail-item-inn-link" href="live-details.html"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<!-- modal -->
+  
   </main>
   <footer id="footer">
     <div class="ft-inner">

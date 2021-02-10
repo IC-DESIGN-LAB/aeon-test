@@ -1,42 +1,50 @@
-body{
-  position: relative;
-}
-.contents{
-  display: flex;
-  width: 100%;
-}
-.contentsAra{
-  width : calc(100% - 250px);
-  margin-top: 90px;
-  margin-left: auto;
-  @include mqsp {
-    width: 100%;
-    margin-top: 0;
-    padding-top: 65px;
-  }
+body {
+    position: relative;
 }
 
-.wapper{
-  max-width: 1280px;
-  width: 100%;
-  margin: 0 auto;
+.contents {
+    display: flex;
+    width: 100%;
+}
+
+.contentsAra {
+    width: calc(100% - 250px);
+    margin-top: 90px;
+    margin-left: auto;
+    @include mqsp {
+        width: 100%;
+        margin-top: 0;
+        padding-top: 56px;
+    }
+}
+
+.wapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+    vertical-align: bottom;
+    height: auto;
 }
 
 .d-fl {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-box;
-  display: -webkit-flexbox;
-  display: -moz-flexbox;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: flex;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-box;
+    display: -webkit-flexbox;
+    display: -moz-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
 }

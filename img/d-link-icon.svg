@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+      <filter id="楕円形_46" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse">
+        <feOffset dx="1" dy="1" input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feFlood flood-opacity="0.161"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+      </filter>
+    </defs>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#楕円形_46)">
+      <circle id="楕円形_46-2" data-name="楕円形 46" cx="16" cy="16" r="16" transform="translate(8 8)" fill="#696969"/>
+    </g>
+    <g id="グループ_380" data-name="グループ 380" transform="translate(12275 -6226)">
+      <circle id="楕円形_47" data-name="楕円形 47" cx="2" cy="2" r="2" transform="translate(-12259 6248)" fill="#fff"/>
+      <circle id="楕円形_48" data-name="楕円形 48" cx="2" cy="2" r="2" transform="translate(-12253 6248)" fill="#fff"/>
+      <circle id="楕円形_49" data-name="楕円形 49" cx="2" cy="2" r="2" transform="translate(-12247 6248)" fill="#fff"/>
+    </g>
+  </svg>

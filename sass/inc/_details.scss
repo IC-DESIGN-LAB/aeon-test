@@ -1,350 +1,416 @@
-    .subpage{
+    .subpage {
         width: calc(100% - 250px);
         margin-top: 160px;
         margin-left: auto;
-        @include sp{
+        @include sp {
             width: 100%;
             margin-top: 0;
-            padding-top: 65px;
+            padding-top: 56px;
         }
-    &-l{
-        &-hd{
-            position: relative;
-            z-index: 1;
-            overflow: hidden;
-            &:after{
-                content: '';
+        &-l {
+            &-hd {
+                position: relative;
+                z-index: 1;
+                overflow: hidden;
+                @include ssp {
+                    z-index: 101;
+                }
+                &:after {
+                    content: '';
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: -1;
+                    filter: blur(8px);
+                    -webkit-filter: blur(15px);
+                    background-image: url(../img/vid-details-hd.png);
+                    background-size: cover;
+                    background-position: center center;
+                }
+            }
+            &-bnr {
+                max-width: 1280px;
                 width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                filter: blur(8px);
-                -webkit-filter: blur(15px);
-                background-image: url(../img/vid-details-hd.png);
-                background-size: cover;
-                background-position: center center;
+                margin: auto;
+                img {
+                    width: 100%;
+                    vertical-align: bottom;
+                    height: auto;
+                }
             }
-        }
-        &-bnr{
-            max-width: 1280px;
-            width: 100%;
-            margin: auto;
-            img{
+            &-inn {
                 width: 100%;
-                vertical-align: bottom;
-                height: auto;
-            }
-        }
-        &-inn{
-            width: 100%;
-            margin: 35px auto 150px;
-            @include ssp {
-                margin: 25px auto 60px;
-            }
-            .video{
-                &-details{
-                    &-info{
-                        p{
+                margin: 35px auto 150px;
+                @include ssp {
+                    margin: 15px auto 60px;
+                    position: relative;
+                    z-index: 100;
+                }
+                .video {
+                    &-details {
+                        &-info {
+                            p {
+                                max-width: 1280px;
+                                width: 90%;
+                                margin: auto;
+                                span {
+                                    display: inline;
+                                    color: #AE1679;
+                                    font-size: 16px;
+                                    border-bottom: 1px solid #AE1679;
+                                    padding-bottom: 5px;
+                                    font-weight: 700;
+                                    @include ssp {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            h2 {
+                                max-width: 1280px;
+                                width: 100%;
+                                margin: 25px auto 30px;
+                                font-size: 24px;
+                                padding: 10px 15px;
+                                background: #707070;
+                                color: #fff;
+                                text-align: center;
+                                box-sizing: border-box;
+                                font-weight: bold;
+                                font-family: Helvetica, sans-serif;
+                                @include ssp {
+                                    font-size: 20px;
+                                    margin: 25px auto 15px;
+                                }
+                            }
+                        }
+                        &-ttl {
                             max-width: 1280px;
                             width: 90%;
                             margin: auto;
-                            span{
-                                display: inline;
-                                color: #AE1679;
-                                font-size: 16px;
-                                border-bottom: 1px solid #AE1679;
-                                padding-bottom: 5px;
+                            h1 {
+                                font-size: 24px;
                                 font-weight: 700;
-                                @include ssp{
-                                    font-size: 14px;
-                                 }
-                            }
-                        }
-                        h2{
-                            max-width: 1280px;
-                            width: 100%;
-                            margin: 25px auto 30px;
-                            font-size: 24px;
-                            padding: 15px;
-                            background: #707070;
-                            color: #fff;
-                            text-align: center;
-                            box-sizing: border-box;
-                            font-weight: bold;
-                            font-family: Helvetica, sans-serif;
-                            @include ssp{
-                                font-size: 20px;
-                                margin: 25px auto 15px;
-                            }
-                        }
-                    }
-                    &-ttl{
-                        max-width: 1280px;
-                        width: 90%;
-                        margin: auto;
-                        h1{
-                            font-size: 24px;
-                            font-weight: 700;
-                            color: #000;
-                            font-family: kozuka-gothic-pro, sans-serif;
-                            @include ssp{
-                               font-size: 18px;
-                            }
-                            span{
-                                font-size: 18px;
-                                font-weight: 500;
-                                color: #959595;
+                                color: #000;
                                 font-family: kozuka-gothic-pro, sans-serif;
-                                padding-bottom: 10px;
-                                display: inline-block;
-                                @include ssp{
-                                   font-size: 14px;
+                                @include ssp {
+                                    font-size: 18px;
+                                    line-height: 1.35;
                                 }
-                            }
-                        }
-                        ul{
-                            justify-content: flex-end;
-                            li{
-                                color: #AE1679;
-                                font-size: 16px;
-                                font-weight: 500;
-                                padding: 15px 0;
-                                margin-left: 13px;
-                                font-family: kozuka-gothic-pro, sans-serif;
-                                @include ssp{
-                                    font-size: 10px;
-                                    padding: 10px 0 5px;
-                                }
-                            }
-                        }
-                    }
-                    &-content{
-                        max-width: 1280px;
-                        width: 90%;
-                        margin: auto;
-                        &-01{
-                            margin: 30px auto;
-                            font-size: 16px;
-                            font-weight: 500;
-                            font-family: kozuka-gothic-pro, sans-serif;
-                            @include ssp{
-                               font-size: 14px;
-                               margin: 15px auto 30px;
-                            }
-                        }
-                        &-02{
-                            border: 1px solid #AE1679;
-                            border-radius: 10px;
-                            padding: 20px 25px;
-                            @include ssp{
-                                border-radius: 5px;
-                                padding: 10px 15px;
-                             }
-                            h2{
-                                font-size: 16px;
-                                font-weight: 700;
-                                font-family: kozuka-gothic-pro, sans-serif;
-                                color: #AE1679;
-                                margin-bottom: 10px;
-                                @include ssp{
-                                   font-size: 14px;
-                                }
-                            }
-                            ul{
-                                li{
-                                    margin: 5px 0;
-                                    font-size: 14px;
+                                span {
+                                    font-size: 18px;
                                     font-weight: 500;
+                                    color: #959595;
                                     font-family: kozuka-gothic-pro, sans-serif;
-                                    list-style-type: disc;
-                                     margin-left: 12px;
-                                    @include ssp{
-                                       font-size: 12px;
+                                    padding-bottom: 10px;
+                                    display: inline-block;
+                                    @include ssp {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                            ul {
+                                justify-content: flex-end;
+                                li {
+                                    color: #AE1679;
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    padding: 15px 0;
+                                    margin-left: 13px;
+                                    font-family: kozuka-gothic-pro, sans-serif;
+                                    @include ssp {
+                                        font-size: 10px;
+                                        padding: 10px 0 5px;
                                     }
                                 }
                             }
                         }
-                        &-03{
-                            padding: 30px 0 75px;
-                                @include ssp{
+                        &-content {
+                            max-width: 1280px;
+                            width: 90%;
+                            margin: auto;
+                            &-01 {
+                                margin: 30px auto;
+                                font-size: 16px;
+                                font-weight: 500;
+                                font-family: kozuka-gothic-pro, sans-serif;
+                                @include ssp {
+                                    font-size: 14px;
+                                    margin: 15px auto 30px;
+                                }
+                            }
+                            &-02 {
+                                border: 1px solid #AE1679;
+                                border-radius: 10px;
+                                padding: 20px 25px;
+                                @include ssp {
+                                    border-radius: 5px;
+                                    padding: 10px 15px;
+                                }
+                                h2 {
+                                    font-size: 16px;
+                                    font-weight: 700;
+                                    font-family: kozuka-gothic-pro, sans-serif;
+                                    color: #AE1679;
+                                    margin-bottom: 10px;
+                                    @include ssp {
+                                        font-size: 14px;
+                                    }
+                                }
+                                ul {
+                                    li {
+                                        margin: 5px 0;
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        font-family: kozuka-gothic-pro, sans-serif;
+                                        list-style-type: disc;
+                                        margin-left: 12px;
+                                        @include ssp {
+                                            font-size: 12px;
+                                        }
+                                    }
+                                }
+                            }
+                            &-03 {
+                                padding: 30px 0 75px;
+                                @include ssp {
                                     padding: 20px 0 45px;
                                 }
-                            .video-details{
-                                &-price{
-                                    text-align: center;
-                                    p{
-                                        font-size: 38px;
-                                        font-family: Helvetica, sans-serif;
-                                        font-weight: bold;
-                                        color: #000;
-                                        @include ssp{
-                                           font-size: 24px;
-                                        }
-                                        span{
-                                            font-size: 18px;
-                                            @include ssp{
-                                               font-size: 12px;
+                                .video-details {
+                                    &-price {
+                                        text-align: center;
+                                        p {
+                                            font-size: 38px;
+                                            font-family: Helvetica, sans-serif;
+                                            font-weight: bold;
+                                            color: #000;
+                                            @include ssp {
+                                                font-size: 24px;
+                                            }
+                                            span {
+                                                font-size: 18px;
+                                                @include ssp {
+                                                    font-size: 12px;
+                                                }
                                             }
                                         }
                                     }
-                                }
-                                &-add-cart{
-                                    text-align: center;
-                                    a{
-                                        display: inline-block;
-                                        max-width: 350px;
-                                        width: 100%;
-                                        margin: 10px auto;
-                                        font-size: 22px;
-                                        font-family: kozuka-gothic-pro, sans-serif;
-                                        padding: 19px 0;
-                                        color: #fff;
-                                        background: #AE1679;
-                                        font-weight: bold;
-                                        border-radius: 5px;
-                                        line-height: 1;
-                                        @include ssp{
-                                           padding: 15px 0;
-                                           font-size: 16px;
-                                           border-radius: 5px;
-                                        }
-                                    }
-                                }
-                                &-zoom{
-                                    margin-top: 40px;
-                                    &-txt{
+                                    &-add-cart {
                                         text-align: center;
-                                        font-size: 14px;
-                                        color: #383838;
-                                        font-weight: bold;
-                                    }
-                                    &-dnl{
-                                        margin: 10px 0;
-                                        text-align: center;
-                                        img{
-                                            max-width: 166px;
+                                        a {
+                                            display: inline-block;
+                                            max-width: 350px;
                                             width: 100%;
-                                            margin: auto;
+                                            margin: 0 auto 10px;
+                                            font-size: 22px;
+                                            font-family: kozuka-gothic-pro, sans-serif;
+                                            padding: 19px 0;
+                                            color: #fff;
+                                            background: #AE1679;
+                                            font-weight: bold;
+                                            border-radius: 5px;
+                                            line-height: 1;
+                                            @include ssp {
+                                                padding: 18px 0;
+                                                font-size: 18px;
+                                                border-radius: 5px;
+                                            }
+                                        }
+                                    }
+                                    &-zoom {
+                                        margin-top: 15px;
+                                        &-txt {
+                                            text-align: center;
+                                            font-size: 14px;
+                                            color: #383838;
+                                            font-weight: bold;
+                                        }
+                                        &-dnl {
+                                            margin: 10px 0;
+                                            text-align: center;
+                                            img {
+                                                max-width: 166px;
+                                                width: 100%;
+                                                margin: auto;
+                                            }
                                         }
                                     }
                                 }
                             }
                         }
-                    }
-                    &-new{
-                        max-width: 1280px;
-                        width: 90%;
-                        margin: auto;
-                        &-ttl{
-                            h2{
-                                border-bottom: 2px solid #AE1679;
-                                text-align: left;
-                                font-size: 24px;
-                                font-weight: bold;
-                                font-family: kozuka-gothic-pro, sans-serif;
-                                @include ssp{
-                                   font-size: 18px;
+                        &-new {
+                            max-width: 1280px;
+                            width: 90%;
+                            margin: auto;
+                            &-ttl {
+                                h2 {
+                                    border-bottom: 2px solid #AE1679;
+                                    text-align: left;
+                                    font-size: 24px;
+                                    font-weight: bold;
+                                    font-family: kozuka-gothic-pro, sans-serif;
+                                    @include ssp {
+                                        font-size: 18px;
+                                    }
                                 }
                             }
-                        }
-                        &-list{
-                            margin-top: 40px;
-                            .detail{
-                                &-item{
-                                    width: 30%;
-                                    margin-right: 4%;
-                                    @include tab{
-                                        width: 47%;
-                                        margin-right: 4%;
-                                    }
-                                    @include ssp{
-                                        width: 100%;
-                                        margin-right: 0;
-                                        padding-left: 0;
-                                        box-shadow: unset;
-                                        &:after{
-                                            content: unset;
-                                        }
-                                        a{
-                                            display: -webkit-box;
-                                            display: -moz-box;
-                                            display: -ms-box;
-                                            display: -webkit-flexbox;
-                                            display: -moz-flexbox;
-                                            display: -ms-flexbox;
-                                            display: -webkit-flex;
-                                            display: -moz-flex;
-                                            display: -ms-flex;
-                                            display: flex;
-                                            -webkit-box-lines: multiple;
-                                            -moz-box-lines: multiple;
-                                            -webkit-flex-wrap: wrap;
-                                            -moz-flex-wrap: wrap;
-                                            -ms-flex-wrap: wrap;
-                                            flex-wrap: wrap;
-                                            justify-content: space-between;
-                                            align-items: flex-start;
-                                        }
-                                    }
-                                    @include mqsp{
-                                        margin-bottom: 6%;
-                                    }
-                                    &:nth-child(1){
-                                        @include mqsp{
-                                            padding-left: 0;
-                                        }
-                                    }
-                                    &:nth-child(3n){
-                                        margin-right: 0;
-                                        @include tab{
-                                            margin-right: 4%;
-                                        }
-                                        @include ssp{
-                                            margin-right: 0;
-                                        }
-                                    }
-                                    &:nth-child(2n){
-                                        @include tab{
-                                            margin-right: 0;
-                                        }
-                                    }
-                                    .detail{
-                                        &-thumb{
-                                            @include ssp{
-                                                width: 42%;
-                                                border-radius: 10px;
-                                                box-shadow: 10px 10px 0px -4px rgba(174,22,121,0.25);
-                                            }
-                                            &-date{
-                                                @include ssp{
-                                                    top: -10px;
-                                                    bottom: unset;
-                                                    left: 0;
-                                                    padding: 1px 8px;
+                            .modal-player-content-tutor{
+                                align-items: center;
+                            }
+                            .modal-player-content-03 {
+                                &-wrap {
+                                    width: 100%;
+                                    margin: 25px 0 40px;
+                                    .modal-player-content-tutor {
+                                        .tutor {
+                                            &-profile {
+                                                &-img {
+                                                    width: 48%;
+                                                    margin: 0;
                                                 }
-                                            }
-                                        }
-                                        &-txtArea{
-                                            @include ssp{
-                                                width: 58%;
-                                                box-sizing: border-box;
-                                                box-shadow: unset;
-                                                padding: 0 0 0 20px
-                                            }
-                                            .detail{
-                                                &-txt-name{
-                                                    margin-bottom: 0;
-                                                }
-                                                &-txt-ttl{
-                                                    @include ssp {
+                                                &-info {
+                                                    width: 48%;
+                                                    margin: 10px 0;
+                                                    margin-left: 4%;
+                                                    h2 {
                                                         font-size: 14px;
                                                     }
+                                                    h3 {
+                                                        font-size: 10px;
+                                                        font-weight: 400;
+                                                    }
+                                                    ul {
+                                                        max-width: 85px;
+                                                        width: 100%;
+                                                        margin: 10px 0;
+                                                        justify-content: space-between;
+                                                        li {
+                                                            img {
+                                                                height: 16px;
+                                                                width: auto;
+                                                                vertical-align: middle;
+                                                                margin: auto;
+                                                            }
+                                                            &:last-child{
+                                                                margin-left: 4px;
+                                                            }
+                                                        }
+                                                    }
                                                 }
-                                                &-tag{
+                                            }
+                                        }
+                                        &-message {
+                                            p {
+                                                font-size: 12px;
+                                                text-align: left;
+                                                width: 100%;
+                                                margin: 20px 0 40px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-list {
+                                margin-top: 40px;
+                                @include ssp {
+                                    margin-top: 20px;
+                                }
+                                .detail {
+                                    &-item {
+                                        width: 30%;
+                                        margin-right: 4%;
+                                        @include tab {
+                                            width: 47%;
+                                            margin-right: 4%;
+                                        }
+                                        @include ssp {
+                                            width: 100%;
+                                            margin-right: 0;
+                                            padding-left: 0;
+                                            box-shadow: unset;
+                                            &:after {
+                                                content: unset;
+                                            }
+                                            a {
+                                                display: -webkit-box;
+                                                display: -moz-box;
+                                                display: -ms-box;
+                                                display: -webkit-flexbox;
+                                                display: -moz-flexbox;
+                                                display: -ms-flexbox;
+                                                display: -webkit-flex;
+                                                display: -moz-flex;
+                                                display: -ms-flex;
+                                                display: flex;
+                                                -webkit-box-lines: multiple;
+                                                -moz-box-lines: multiple;
+                                                -webkit-flex-wrap: wrap;
+                                                -moz-flex-wrap: wrap;
+                                                -ms-flex-wrap: wrap;
+                                                flex-wrap: wrap;
+                                                justify-content: space-between;
+                                                align-items: flex-start;
+                                            }
+                                        }
+                                        @include mqsp {
+                                            margin-bottom: 6%;
+                                        }
+                                        &:nth-child(1) {
+                                            @include mqsp {
+                                                padding-left: 0;
+                                            }
+                                        }
+                                        &:nth-child(3n) {
+                                            margin-right: 0;
+                                            @include tab {
+                                                margin-right: 4%;
+                                            }
+                                            @include ssp {
+                                                margin-right: 0;
+                                            }
+                                        }
+                                        &:nth-child(2n) {
+                                            @include tab {
+                                                margin-right: 0;
+                                            }
+                                        }
+                                        .detail {
+                                            &-thumb {
+                                                @include ssp {
+                                                    width: 42%;
+                                                    border-radius: 10px;
+                                                    box-shadow: 10px 10px 0px -4px rgba(174, 22, 121, 0.25);
+                                                }
+                                                &-date {
                                                     @include ssp {
-                                                        display: none;
+                                                        top: -10px;
+                                                        bottom: unset;
+                                                        left: 0;
+                                                        padding: 1px 8px;
+                                                    }
+                                                }
+                                            }
+                                            &-txtArea {
+                                                @include ssp {
+                                                    width: 58%;
+                                                    box-sizing: border-box;
+                                                    box-shadow: unset;
+                                                    padding: 0 0 0 20px
+                                                }
+                                                .detail {
+                                                    &-txt-name {
+                                                        margin-bottom: 0;
+                                                    }
+                                                    &-txt-ttl {
+                                                        @include ssp {
+                                                            font-size: 14px;
+                                                        }
+                                                    }
+                                                    &-tag {
+                                                        @include ssp {
+                                                            display: none;
+                                                        }
                                                     }
                                                 }
                                             }
@@ -358,68 +424,67 @@
             }
         }
     }
- }
-
-.livepage{
-    margin-top: 90px;
-    @include mqsp {
-        margin-top: 0;
+    
+    .livepage {
+        margin-top: 90px;
+        @include mqsp {
+            margin-top: 0;
+        }
     }
-}
-.like-btn{
-    position: relative;
-    max-width: 1280px;
-    width: 98%;
-    margin: auto;
-    &-inn{
-        position: absolute;
-        bottom: 5px;
-        right: 0;
-        width: 85px;
+    
+    .like-btn {
+        position: relative;
+        max-width: 1280px;
+        width: 98%;
         margin: auto;
-        justify-content: flex-end;
-        @include ssp{
-            bottom: -10px;
-        }
-        img{
-            margin-right: 6px;
-            width: 20px; 
-        }
-        span{
-            color: #AE1679;
-            font-weight: 600;
-            font-size: 15px;
-            line-height: 1.8;
-            position: relative;
-            @include ssp{
-                font-size: 12px;
+        &-inn {
+            position: absolute;
+            bottom: 5px;
+            right: 0;
+            width: 85px;
+            margin: auto;
+            justify-content: flex-end;
+            @include ssp {
+                bottom: -10px;
             }
-            &:after{
-                content: "";
-                position: absolute;
+            img {
+                margin-right: 6px;
                 width: 20px;
-                height: 20px;
-                left: -27px;
-                top: 50%;
-                transform: translate(0, -55%);
-                background-image: url(../img/like-btn-icon.svg);
-                background-size: contain;
-                background-position: center;
-                background-repeat: no-repeat;
-                @include ssp{
-                    width: 15px;
-                    height: 15px;
-                    left: -22px;
+            }
+            span {
+                color: #AE1679;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 1.8;
+                position: relative;
+                @include ssp {
+                    font-size: 12px;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 20px;
+                    height: 20px;
+                    left: -27px;
+                    top: 50%;
+                    transform: translate(0, -55%);
+                    background-image: url(../img/like-btn-icon.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    @include ssp {
+                        width: 15px;
+                        height: 15px;
+                        left: -22px;
+                    }
                 }
             }
-        }
-        &:hover{
-            span{
-                &:after{
-                    background-image: url(../img/like-btn-icon-hover.svg);
+            &:hover {
+                span {
+                    &:after {
+                        background-image: url(../img/like-btn-icon-hover.svg);
+                    }
                 }
             }
         }
     }
-}                        
-

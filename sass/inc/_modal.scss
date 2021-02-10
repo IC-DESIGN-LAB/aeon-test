@@ -1,0 +1,516 @@
+//__modal
+.blocker {
+    z-index: 1000;
+    padding-bottom: 0;
+    padding: 50px 20px 20px;
+    .modal {
+        display: block;
+        max-width: 700px;
+        background: #242424;
+        color: #fff;
+        padding: 0;
+        -webkit-box-shadow: 0 0 3px #000;
+        -moz-box-shadow: 0 0 3px #000;
+        -o-box-shadow: 0 0 3px #000;
+        -ms-box-shadow: 0 0 3px #000;
+        box-shadow: 0 0 3px #000;
+        border-radius: 0;
+        a.close-modal {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            display: block;
+            width: 30px;
+            height: 30px;
+            text-indent: -9999px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAAAXNSR0IArs4c6QAAA3hJREFUaAXlm8+K00Acx7MiCIJH/yw+gA9g25O49SL4AO3Bp1jw5NvktC+wF88qevK4BU97EmzxUBCEolK/n5gp3W6TTJPfpNPNF37MNsl85/vN/DaTmU6PknC4K+pniqeKJ3k8UnkvDxXJzzy+q/yaxxeVHxW/FNHjgRSeKt4rFoplzaAuHHDBGR2eS9G54reirsmienDCTRt7xwsp+KAoEmt9nLaGitZxrBbPFNaGfPloGw2t4JVamSt8xYW6Dg1oCYo3Yv+rCGViV160oMkcd8SYKnYV1Nb1aEOjCe6L5ZOiLfF120EjWhuBu3YIZt1NQmujnk5F4MgOpURzLfAwOBSTmzp3fpDxuI/pabxpqOoz2r2HLAb0GMbZKlNV5/Hg9XJypguryA7lPF5KMdTZQzHjqxNPhWhzIuAruOl1eNqKEx1tSh5rfbxdw7mOxCq4qS68ZTjKS1YVvilu559vWvFHhh4rZrdyZ69Vmpgdj8fJbDZLJpNJ0uv1cnr/gjrUhQMuI+ANjyuwftQ0bbL6Erp0mM/ny8Fg4M3LtdRxgMtKl3jwmIHVxYXChFy94/Rmpa/pTbNUhstKV+4Rr8lLQ9KlUvJKLyG8yvQ2s9SBy1Jb7jV5a0yapfF6apaZLjLLcWtd4sNrmJUMHyM+1xibTjH82Zh01TNlhsrOhdKTe00uAzZQmN6+KW+sDa/JD2PSVQ873m29yf+1Q9VDzfEYlHi1G5LKBBWZbtEsHbFwb1oYDwr1ZiF/2bnCSg1OBE/pfr9/bWx26UxJL3ONPISOLKUvQza0LZUxSKyjpdTGa/vDEr25rddbMM0Q3O6Lx3rqFvU+x6UrRKQY7tyrZecmD9FODy8uLizTmilwNj0kraNcAJhOp5aGVwsAGD5VmJBrWWbJSgWT9zrzWepQF47RaGSiKfeGx6Szi3gzmX/HHbihwBser4B9UJYpFBNX4R6vTn3VQnez0SymnrHQMsRYGTr1dSk34ljRqS/EMd2pLQ8YBp3a1PLfcqCpo8gtHkZFHKkTX6fs3MY0blKnth66rKCnU0VRGu37ONrQaA4eZDFtWAu2fXj9zjFkxTBOo8F7t926gTp/83Kyzzcy2kZD6xiqxTYnHLRFm3vHiRSwNSjkz3hoIzo8lCKWUlg/YtGs7tObunDAZfpDLbfEI15zsEIY3U/x/gHHc/G1zltnAgAAAABJRU5ErkJggg==);
+        }
+    }
+}
+
+.modal-inn {
+    background: #242424;
+    color: #fff;
+    .modal-days{
+        width: 100%;
+        background-color: #5F585C;
+        padding: 10px 0;
+        font-weight: 600;
+        p{
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            font-family: kozuka-gothic-pro,sans-serif;
+        }
+    }
+    .modal-player {
+        &-thumb {
+            width: 100%;
+        }
+        &-content {
+            width: 90%;
+            margin: auto;
+            &-hd {
+                h2 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding: 2px 0 2px 15px;
+                    position: relative;
+                    span {
+                        font-size: 18px;
+                        margin-right: 10px;
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translate(0, -50%);
+                        height: 80%;
+                        width: 6px;
+                        background: #AE1679;
+                    }
+                }
+            }
+            &-01 {
+                width: 100%;
+                margin: 40px 0 30px;
+                &-wrap {
+                    h3 {
+                        margin-top: 15px;
+                        font-size: 24px;
+                        font-weight: 700;
+                        font-family: kozuka-gothic-pro, sans-serif;
+                    }
+                    line-height: 1.4;
+                    ul {
+                        justify-content: flex-end;
+                        margin-bottom: 10px;
+                        li {
+                            padding: 8px;
+                            font-size: 12px;
+                        }
+                    }
+                    p {
+                        font-size: 14px;
+                        text-align: left;
+                        line-height: 1.6;
+                    }
+                }
+                &-price {
+                    h3 {
+                        padding: 17px 0 5px;
+                        text-align: center;
+                        font-size: 32px;
+                        font-weight: bold;
+                        font-family: Helvetica, sans-serif;
+                        span {
+                            font-size: 12px;
+                            margin-left: -12px;
+                        }
+                    }
+                    &-btn {
+                        justify-content: center;
+                        align-items: center;
+                        .modal-player-add-to-cart {
+                            text-align: center;
+                            max-width: 245px;
+                            width: 100%;
+                            margin-left: 43px;
+                            a {
+                                display: inline-block;
+                                max-width: 245px;
+                                width: 100%;
+                                margin: 0 auto 10px;
+                                font-size: 20px;
+                                font-family: kozuka-gothic-pro, sans-serif;
+                                padding: 15px 0;
+                                color: #fff;
+                                background: #AE1679;
+                                font-weight: bold;
+                                border-radius: 5px;
+                                line-height: 1;
+                            }
+                        }
+                        .modal-player-add-fav {
+                            margin-left: 10px;
+                            margin-top: -10px;
+                        }
+                    }
+                }
+            }
+            &-02 {
+                &-wrap {
+                    width: 100%;
+                    margin: 15px 0 30px;
+                    padding: 15px 20px;
+                    background: #fff;
+                    border: 2px solid #AE1679;
+                    border-radius: 5px;
+                    box-sizing: border-box;
+                    ul {
+                        margin-left: 20px;
+                        li {
+                            padding: 5px 0;
+                            font-size: 14px;
+                            list-style-type: disc;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+            &-03 {
+                &-wrap {
+                    width: 100%;
+                    margin: 17px 0 70px;
+                    .modal-player-content-tutor {
+                        .tutor {
+                            &-profile {
+                                &-img {
+                                    max-width: 170px;
+                                    width: 100%;
+                                    margin: 0;
+                                    img{
+                                        border-radius: 5px;
+                                    }
+                                }
+                                &-info {
+                                    margin: 20px;
+                                    h2 {
+                                        font-size: 16px;
+                                        margin-bottom: 3px;
+                                    }
+                                    h3 {
+                                        font-size: 14px;
+                                        font-weight: 400;
+                                    }
+                                    ul {
+                                        max-width: 80px;
+                                        width: 100%;
+                                        margin: 15px 0;
+                                        justify-content: space-between;
+                                        li {
+                                            img {
+                                                height: 16px;
+                                                width: auto;
+                                                vertical-align: middle;
+                                                margin: auto;
+                                            }
+                                            &:last-child{
+                                                margin-left: 4px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        &-message {
+                            p {
+                                font-size: 14px;
+                                text-align: left;
+                                width: 100%;
+                                margin: 10px 0 40px;
+                            }
+                        }
+                    }
+                }
+            }
+            &-04 {
+                &-wrap {
+                    width: 100%;
+                    margin: 18px 0 50px;
+                    .liver {
+                        &-detail {
+                            width: 90%;
+                            margin-bottom: 100px;
+                            &-inner {
+                                @include mqsp {
+                                    width: 100%;
+                                }
+                            }
+                            &-list {
+                                display: flex;
+                                flex-wrap: wrap;
+                                @include mqsp {
+                                    width: 100%;
+                                }
+                            }
+                            &-item {
+                                width: 48%;
+                                margin-right: 4%;
+                                margin-bottom: 4%;
+                                background-color: #242424;
+                                position: relative;
+                                box-sizing: border-box;
+                                z-index: 99;
+                                &:nth-child(3n) {
+                                    margin-right: 4%;
+                                }
+                                &:nth-child(2n) {
+                                    margin-right: 0;
+                                }
+                                @include ssp {
+                                    width: 100%;
+                                    margin-right: 0;
+                                    margin-bottom: 30px;
+                                    box-shadow: unset;
+                                    a {}
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                }
+                                &:first-child {
+                                    @include ssp {
+                                        margin-right: 0;
+                                    }
+                                }
+                                &-inn {
+                                    width: 100%;
+                                    border-radius: 10px;
+                                    border-top-left-radius: 0;
+                                    box-sizing: border-box;
+                                    @include ssp {
+                                        display: -webkit-box;
+                                        display: -moz-box;
+                                        display: -ms-box;
+                                        display: -webkit-flexbox;
+                                        display: -moz-flexbox;
+                                        display: -ms-flexbox;
+                                        display: -webkit-flex;
+                                        display: -moz-flex;
+                                        display: -ms-flex;
+                                        display: flex;
+                                        -webkit-box-lines: multiple;
+                                        -moz-box-lines: multiple;
+                                        -webkit-flex-wrap: wrap;
+                                        -moz-flex-wrap: wrap;
+                                        -ms-flex-wrap: wrap;
+                                        flex-wrap: wrap;
+                                        border: unset;
+                                        .liver-detail-item-inn-link {
+                                            width: 100%;
+                                            height: 100%;
+                                            top: 0;
+                                            left: 0;
+                                            position: absolute;
+                                            z-index: 100;
+                                        }
+                                    }
+                                }
+                                &-thumb {
+                                    position: relative;
+                                    @include ssp {
+                                        width: 42%;
+                                        box-shadow: 10px 10px 0px -4px #ae167940;
+                                        border-radius: 8px;
+                                        -webkit-border-radius: 8px;
+                                        -moz-border-radius: 8px;
+                                        -ms-border-radius: 8px;
+                                        -o-border-radius: 8px;
+                                    }
+                                    figure {
+                                        img {
+                                            width: 100%;
+                                            vertical-align: bottom;
+                                            border-top-right-radius: 10px;
+                                            @include ssp {
+                                                border-top-left-radius: 0;
+                                                border-radius: 5px;
+                                            }
+                                        }
+                                    }
+                                    &-date {
+                                        background-color: #AE1679;
+                                        display: inline-block;
+                                        color: #ffffff;
+                                        font-weight: 600;
+                                        font-family: $enfont;
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        letter-spacing: 1px;
+                                        span {
+                                            display: inline-block;
+                                            padding: 4px 10px;
+                                            @include ssp {
+                                                padding: 2px 5px;
+                                            }
+                                        }
+                                        date {
+                                            display: inline-block;
+                                            padding: 4px 10px;
+                                            background: #fff;
+                                            color: #AE1679;
+                                            @include ssp {
+                                                padding: 2px 5px;
+                                            }
+                                        }
+                                        @include ssp {
+                                            font-size: 10px;
+                                            letter-spacing: 0.1em;
+                                            display: inline-block;
+                                            top: -10px;
+                                            bottom: unset;
+                                            height: auto;
+                                            box-shadow: 0px 0px 6px 1px #ae167940;
+                                        }
+                                    }
+                                    &-icon {
+                                        justify-content: space-between;
+                                        position: absolute;
+                                        bottom: -16px;
+                                        right: 10px;
+                                        max-width: 70px;
+                                        width: 100%;
+                                        opacity: 0;
+                                        li {
+                                            width: 48%;
+                                            max-width: 32px;
+                                        }
+                                    }
+                                }
+                                &-txtArea {
+                                    padding: 15px 0 20px;
+                                    border-bottom-left-radius: 10px;
+                                    border-bottom-right-radius: 10px;
+                                    box-shadow: 4px 5px 16px -9px rgba(0, 0, 0, 0.6);
+                                    box-sizing: border-box;
+                                    background: #fff;
+                                    
+                                    @include ssp {
+                                        width: 52%;
+                                        margin-left: 6%;
+                                        position: relative;
+                                        padding: 0;
+                                        box-sizing: border-box;
+                                        box-shadow: unset;
+                                        border-radius: 0px;
+                                        -webkit-border-radius: 0px;
+                                        -moz-border-radius: 0px;
+                                        -ms-border-radius: 0px;
+                                        -o-border-radius: 0px;
+                                    }
+                                }
+                                &-txt {
+                                    width: 90%;
+                                    margin: auto;
+                                    @include ssp {
+                                        width: 100%;
+                                        margin-bottom: 0;
+                                    }
+                                    &-name {
+                                        font-size: 14px;
+                                        color: #AE1679;
+                                        margin-bottom: 5px;
+                                        letter-spacing: 0.1em;
+                                        @include ssp {
+                                            font-size: 12px;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                    &-ttl {
+                                        font-size: 16px;
+                                        font-weight: 600;
+                                        display: -webkit-box;
+                                        -webkit-box-orient: vertical;
+                                        -webkit-line-clamp: 2;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                        line-height: 1.5;
+                                        color: #000;
+                                        @include ssp {
+                                            font-size: 14px;
+                                            -webkit-line-clamp: 3;
+                                        }
+                                    }
+                                    &-text {
+                                        padding-bottom: 10px;
+                                        font-size: 12px;
+                                        opacity: 0;
+                                        display: none;
+                                        margin-top: 10px;
+                                        color: #000;
+                                        @include ssp {
+                                            opacity: 0;
+                                            display: none;
+                                        }
+                                    }
+                                }
+                                &-tag {
+                                    text-align: right;
+                                    @include ssp {
+                                        display: none;
+                                    }
+                                    &-item {
+                                        font-size: 10px;
+                                        display: inline-block;
+                                        color: #AE1679;
+                                        margin-right: 5px;
+                                        margin-bottom: 15px;
+                                        @include ssp {
+                                            font-size: 8px;
+                                            margin-right: 3px;
+                                            margin-bottom: 0;
+                                        }
+                                    }
+                                }
+                                &:hover {
+                                    z-index: 100;
+                                    .liver-detail-item-inn {
+                                        border-radius: 15px;
+                                        border-top-left-radius: 0;
+                                        transform: scaleX(1.05) scaleY(1.08);
+                                        -webkit-transition: all .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                        transition: all .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                        background: #fff;
+                                        position: absolute;
+                                        width: 100%;
+                                        padding: 3px;
+                                        @include ssp {
+                                            transform: unset;
+                                            position: unset;
+                                            border: unset;
+                                        }
+                                        .liver-detail-item-thumb {
+                                            &-icon {
+                                                opacity: 1;
+                                                -webkit-transition: all .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                                transition: all .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                                @include ssp {
+                                                    opacity: 0;
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        .liver-detail-item-txt {
+                                            &-text {
+                                                padding-bottom: 10px;
+                                                font-size: 12px;
+                                                opacity: 1;
+                                                display: block;
+                                                -webkit-transition: all .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                                transition: all .1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                                letter-spacing: 0.1em;
+                                                line-height: 1.4;
+                                                @include ssp {
+                                                    opacity: 0;
+                                                    display: none;
+                                                }
+                                            }
+                                        }
+                                        .liver-detail-item-txtArea{
+                                            padding: 15px 0 10px;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

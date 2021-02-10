@@ -19,51 +19,70 @@
         &-list {
             display: flex;
             flex-wrap: wrap;
-            margin-right: -4%;
             @include mqsp {
                 width: 100%;
             }
         }
         &-item {
-            width: 29%;
-            margin-right: 4%;
-            margin-bottom: 4%;
+            width: 31.33%;
+            margin-right: 3%;
+            margin-bottom: 3%;
             background-color: #ffffff;
-            border-radius: 10px;
             position: relative;
-            &:after{
-                width: 95%;
-                height: 95%;
-                bottom: -15px;
-                right: -15px;
-                background: #ac157840;
-                content: "";
-                position: absolute;
-                z-index: -1;
-                border-radius: 10px;
-                @include ssp {
-                    content: unset;
-                }
+            box-sizing: border-box;
+            z-index: 99;
+            // &:after{
+            //     width: 95%;
+            //     height: 95%;
+            //     bottom: -15px;
+            //     right: -15px;
+            //     background: #ac157840;
+            //     content: "";
+            //     position: absolute;
+            //     z-index: -1;
+            //     border-radius: 10px;
+            //     @include ssp {
+            //         content: unset;
+            //     }
+            // }
+            // @media (max-width: 1150px) {
+            //     width: 44%;
+            //     margin-right: 6%;
+            //     margin-bottom: 6%;
+            // }
+            // @include mqsp {
+            //     width: 46%;
+            // }
+            &:nth-child(3n) {
+                margin-right: 0;
             }
-            @media (max-width: 1150px) {
-                width: 44%;
-                margin-right: 6%;
-                margin-bottom: 6%;
-            }
-            @include mqsp {
-                width: 46%;
-            }
-            &:nth-child(2n){
-                @include mqsp {
-                    margin-right: 0;
-                }
-            }
+            // &:nth-child(2n){
+            //     @include mqsp {
+            //         margin-right: 0;
+            //     }
+            // }
             @include ssp {
                 width: 100%;
                 margin-right: 0;
                 margin-bottom: 30px;
                 box-shadow: unset;
-                a{
+                a {}
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            &:first-child {
+                @include ssp {
+                    margin-right: 0;
+                }
+            }
+            &-inn {
+                width: 100%;
+                border-radius: 10px;
+                border-top-left-radius: 0;
+                box-sizing: border-box;
+                padding: 3px;
+                @include ssp {
                     display: -webkit-box;
                     display: -moz-box;
                     display: -ms-box;
@@ -80,132 +99,246 @@
                     -moz-flex-wrap: wrap;
                     -ms-flex-wrap: wrap;
                     flex-wrap: wrap;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                }
-                &:last-child {
-                    margin-bottom: 0;
-                }
-            }
-            &:first-child {
-                @include ssp {
-                    margin-right: 0;
-                }
-            }
-        }
-        &-thumb {
-            position: relative;
-            figure {
-                @include ssp {
-                    height: 100%;
-                }
-            }
-            @include ssp {
-                width: 42%;
-                box-shadow: 10px 10px 0px -4px rgba(174,22,121,0.25);
-                border-radius: 10px;
-                -webkit-border-radius: 10px;
-                -moz-border-radius: 10px;
-                -ms-border-radius: 10px;
-                -o-border-radius: 10px;
-            }
-            figure {
-                img {
-                    border-radius: 10px;
-                    width: 100%;
-                    vertical-align: bottom;
-                    @include ssp {
+                    border: unset;
+                    align-items: flex-end;
+                    .liver-detail-item-inn-link {
+                        width: 100%;
                         height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absolute;
+                        z-index: 100;
                     }
                 }
             }
-            &-date {
-                background-color: #AE1679;
-                border-radius: 5px;
-                padding: 3px 10px;
-                display: inline-block;
-                color: #ffffff;
-                font-weight: 600;
-                font-family: $enfont;
-                position: absolute;
-                bottom: -8px;
-                left: -10px;
-                @include ssp {
-                    font-size: 10px;
-                    letter-spacing: 0.1em;
-                    padding: 1px 8px;
-                    display: inline-block;
-                    top: 0;
-                    bottom: unset;
-                    height: auto;
-                    top: -10px;
-                    bottom: unset;
-                    left: 0;
-                }
-            }
-        }
-        &-txtArea {
-            padding: 20px 15px 0 20px;
-            padding-top: 20px;
-            border-radius: 10px;
-            box-shadow: 4px 5px 16px -9px rgba(0, 0, 0, 0.6);
-            box-sizing: border-box;
-            @include ssp {
+            &-thumb {
                 position: relative;
-                width: 58%;
-                padding: 0 0 0 20px;
+                @include ssp {
+                    width: 42%;
+                    box-shadow: 10px 10px 0px -4px #ae167940;
+                    border-radius: 8px;
+                    -webkit-border-radius: 8px;
+                    -moz-border-radius: 8px;
+                    -ms-border-radius: 8px;
+                    -o-border-radius: 8px;
+                }
+                figure {
+                    img {
+                        width: 100%;
+                        vertical-align: bottom;
+                        border-top-right-radius: 10px;
+                        @include ssp {
+                            border-top-left-radius: 0;
+                            border-radius: 5px;
+                        }
+                    }
+                }
+                &-date {
+                    background-color: #AE1679;
+                    display: inline-block;
+                    color: #ffffff;
+                    font-weight: 600;
+                    font-family: $enfont;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    letter-spacing: 1px;
+                    span {
+                        display: inline-block;
+                        padding: 2px 7px;
+                        @include ssp {
+                            padding: 2px 5px;
+                        }
+                    }
+                    date {
+                        display: inline-block;
+                        padding: 2px 7px;
+                        background: #fff;
+                        color: #AE1679;
+                        @include ssp {
+                            padding: 2px 5px;
+                        }
+                    }
+                    @include ssp {
+                        font-size: 10px;
+                        letter-spacing: 0.1em;
+                        display: inline-block;
+                        top: -10px;
+                        bottom: unset;
+                        height: auto;
+                        box-shadow: 0px 0px 6px 1px #ae167940;
+                    }
+                }
+                &-icon {
+                    justify-content: space-between;
+                    position: absolute;
+                    bottom: -16px;
+                    right: 10px;
+                    max-width: 80px;
+                    width: 100%;
+                    opacity: 0;
+                    li {
+                        width: 48%;
+                        max-width: 37px;
+                    }
+                }
+            }
+            &-txtArea {
+                padding: 15px 0 30px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                box-shadow: 4px 5px 16px -9px rgba(0, 0, 0, 0.6);
                 box-sizing: border-box;
-                box-shadow: unset;
-                border-radius: 0px;
-                -webkit-border-radius: 0px;
-                -moz-border-radius: 0px;
-                -ms-border-radius: 0px;
-                -o-border-radius: 0px;
-            }
-        }
-        &-txt {
-            margin-bottom: 15px;
-            @include ssp {
-                margin-bottom: 0;
-            }
-            &-name {
-                font-size: 14px;
-                color: #959595;
-                margin-bottom: 10px;
-                letter-spacing: 0.1em;
+                background: #fff;
+                position: relative;
+                z-index: -1;
                 @include ssp {
-                    font-size: 12px;
-                    margin-bottom: 0;
+                    width: 52%;
+                    margin-left: 6%;
+                    position: relative;
+                    padding: 0;
+                    box-sizing: border-box;
+                    box-shadow: unset;
+                    border-radius: 0px;
+                    -webkit-border-radius: 0px;
+                    -moz-border-radius: 0px;
+                    -ms-border-radius: 0px;
+                    -o-border-radius: 0px;
+                }
+                a.modal-open {
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    position: absolute;
+                    z-index: 100;
+                    @include ssp {
+                        display: none;
+                    }
                 }
             }
-            &-ttl {
-                font-size: 16px;
-                font-weight: 600;
-                display: -webkit-box;
-                -webkit-box-orient: vertical;
-                -webkit-line-clamp: 3;
-                text-overflow: ellipsis;
-                overflow: hidden;
+            &-txt {
+                width: 90%;
+                margin: auto;
                 @include ssp {
+                    width: 100%;
+                    margin-bottom: 0;
+                }
+                &-name {
                     font-size: 14px;
+                    color: #AE1679;
+                    margin-bottom: 5px;
+                    letter-spacing: 0.1em;
+                    @include ssp {
+                        font-size: 12px;
+                        margin-bottom: 0;
+                    }
+                }
+                &-ttl {
+                    font-size: 16px;
+                    font-weight: 600;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    line-height: 1.5;
+                    @include ssp {
+                        font-size: 14px;
+                        -webkit-line-clamp: 3;
+                    }
+                }
+                &-text {
+                    padding-bottom: 10px;
+                    font-size: 12px;
+                    opacity: 0;
+                    display: none;
+                    margin-top: 10px;
+                    @include ssp {
+                        opacity: 0;
+                        display: none;
+                    }
                 }
             }
-        }
-        &-tag {
-            text-align: right;
-            @include ssp {
-                display: none;
-            }
-            &-item {
-                font-size: 10px;
-                display: inline-block;
-                color: #AE1679;
-                margin-right: 5px;
-                margin-bottom: 15px;
+            &-tag {
+                text-align: right;
                 @include ssp {
-                    font-size: 8px;
-                    margin-right: 3px;
-                    margin-bottom: 0;
+                    display: none;
+                }
+                &-item {
+                    font-size: 10px;
+                    display: inline-block;
+                    color: #AE1679;
+                    margin-right: 5px;
+                    margin-bottom: 15px;
+                    @include ssp {
+                        font-size: 8px;
+                        margin-right: 3px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &:hover {
+                z-index: 100;
+                .liver-detail-item-inn {
+                    border-radius: 15px;
+                    border-top-left-radius: 0;
+                    transform: scaleX(1.05) scaleY(1.08);
+                    -webkit-transition: all .3s ease-in-out;
+                    transition: all .3s ease-in-out;
+                    background: #fff;
+                    position: absolute;
+                    width: 100%;
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        border: 5px solid #ae1679;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        border-top-left-radius: 0;
+                        z-index: -2;
+                        @include ssp {
+                            content: unset;
+                        }
+                    }
+                    @include ssp {
+                        transform: unset;
+                        position: unset;
+                        border: unset;
+                    }
+                    .liver-detail-item-thumb {
+                        &-icon {
+                            opacity: 1;
+                            -webkit-transition: all .3s ease-in-out;
+                            transition: all .3s ease-in-out;
+                            @include ssp {
+                                opacity: 0;
+                                display: none;
+                            }
+                        }
+                    }
+                    .liver-detail-item-txt {
+                        &-text {
+                            padding-bottom: 10px;
+                            font-size: 12px;
+                            opacity: 1;
+                            display: block;
+                            -webkit-transition: all .3s ease-in-out;
+                            transition: all .3s ease-in-out;
+                            line-height: 1.45;
+                            @include ssp {
+                                opacity: 0;
+                                display: none;
+                            }
+                        }
+                    }
+                    .liver-detail-item-txtArea{
+                        padding: 15px 0 10px;
+                    }
                 }
             }
         }

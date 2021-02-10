@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+    <defs>
+        <filter id="楕円形_46" x="0" y="0" width="50" height="50" filterUnits="userSpaceOnUse">
+        <feOffset dx="1" dy="1" input="SourceAlpha"/>
+        <feGaussianBlur stdDeviation="3" result="blur"/>
+        <feFlood flood-opacity="0.161"/>
+        <feComposite operator="in" in2="blur"/>
+        <feComposite in="SourceGraphic"/>
+        </filter>
+    </defs>
+    <g id="グループ_390" data-name="グループ 390" transform="translate(-512 -382)">
+        <g transform="matrix(1, 0, 0, 1, 512, 382)" filter="url(#楕円形_46)">
+        <circle id="楕円形_46-2" data-name="楕円形 46" cx="16" cy="16" r="16" transform="translate(8 8)" fill="#696969"/>
+        </g>
+        <g id="グループ_377" data-name="グループ 377" transform="translate(528.773 399.57)">
+        <path id="パス_3" data-name="パス 3" d="M3.917,3.86h11.5L13.981,9.905H5.355m8.626,1.86H5.834L3.438,2H2" transform="translate(-2 -2)" fill="#696969" stroke="#fdfdfd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <circle id="楕円形_5" data-name="楕円形 5" cx="0.959" cy="0.959" r="0.959" transform="translate(9.514 10.931)" fill="#696969" stroke="#fdfdfd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        <circle id="楕円形_6" data-name="楕円形 6" cx="0.959" cy="0.959" r="0.959" transform="translate(3.761 10.931)" fill="#696969" stroke="#fdfdfd" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+    </g>
+</svg>
