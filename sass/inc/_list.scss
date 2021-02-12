@@ -166,7 +166,7 @@
                         top: -10px;
                         bottom: unset;
                         height: auto;
-                        box-shadow: 0px 0px 6px 1px #ae167940;
+                        box-shadow: 0px 0px 6px 1px #dcdbdb;
                     }
                 }
                 &-icon {
@@ -231,7 +231,8 @@
                     letter-spacing: 0.1em;
                     @include ssp {
                         font-size: 12px;
-                        margin-bottom: 0;
+                        margin-bottom: 4px;
+                        letter-spacing: 0.15em;
                     }
                 }
                 &-ttl {
@@ -243,9 +244,12 @@
                     text-overflow: ellipsis;
                     overflow: hidden;
                     line-height: 1.5;
+                    letter-spacing: 0.08em;
                     @include ssp {
                         font-size: 14px;
                         -webkit-line-clamp: 3;
+                        line-height: 1.4;
+                        letter-spacing: 0.08em;
                     }
                 }
                 &-text {

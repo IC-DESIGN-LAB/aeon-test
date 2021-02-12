@@ -95,8 +95,9 @@
             font-size: 20px;
             font-weight: bold;
             font-family: $enfont;
+            line-height: 1.5;
             @media (max-width: 620px) {
-                font-size: 18px;
+                font-size: 16px;
             }
             span {
                 display: block;
@@ -122,6 +123,7 @@
                 line-height: 2;
                 @media (max-width: 620px) {
                     font-size: 12px;
+                    line-height: 1.7;
                 }
             }
             a {
@@ -131,6 +133,9 @@
                 font-size: 14px;
                 font-weight: 300;
                 text-decoration: underline;
+                @media (max-width: 620px) {
+                    font-size: 12px;
+                }
             }
         }
         &-button {

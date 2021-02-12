@@ -44,7 +44,7 @@
                 width: 100%;
                 margin: 35px auto 150px;
                 @include ssp {
-                    margin: 15px auto 60px;
+                    margin: 10px auto 60px;
                     position: relative;
                     z-index: 100;
                 }
@@ -60,7 +60,7 @@
                                     color: #AE1679;
                                     font-size: 16px;
                                     border-bottom: 1px solid #AE1679;
-                                    padding-bottom: 5px;
+                                    padding-bottom: 2px;
                                     font-weight: 700;
                                     @include ssp {
                                         font-size: 14px;
@@ -72,7 +72,7 @@
                                 width: 100%;
                                 margin: 25px auto 30px;
                                 font-size: 24px;
-                                padding: 10px 15px;
+                                padding: 8px 15px;
                                 background: #707070;
                                 color: #fff;
                                 text-align: center;
@@ -80,8 +80,9 @@
                                 font-weight: bold;
                                 font-family: Helvetica, sans-serif;
                                 @include ssp {
-                                    font-size: 20px;
-                                    margin: 25px auto 15px;
+                                    font-size: 18px;
+                                    margin: 15px auto 15px;
+                                    letter-spacing: 0.1em;
                                 }
                             }
                         }
@@ -135,9 +136,11 @@
                                 font-size: 16px;
                                 font-weight: 500;
                                 font-family: kozuka-gothic-pro, sans-serif;
+                                letter-spacing: 0.13em;
                                 @include ssp {
                                     font-size: 14px;
                                     margin: 15px auto 30px;
+                                    line-height: 1.45;
                                 }
                             }
                             &-02 {
@@ -166,6 +169,7 @@
                                         font-family: kozuka-gothic-pro, sans-serif;
                                         list-style-type: disc;
                                         margin-left: 12px;
+                                        line-height: 1.5;
                                         @include ssp {
                                             font-size: 12px;
                                         }
@@ -225,6 +229,7 @@
                                             font-size: 14px;
                                             color: #383838;
                                             font-weight: bold;
+                                            line-height: 1.5;
                                         }
                                         &-dnl {
                                             margin: 10px 0;
@@ -306,6 +311,7 @@
                                                 text-align: left;
                                                 width: 100%;
                                                 margin: 20px 0 40px;
+                                                line-height: 1.45;
                                             }
                                         }
                                     }
@@ -424,14 +430,14 @@
             }
         }
     }
-    
+
     .livepage {
         margin-top: 90px;
         @include mqsp {
             margin-top: 0;
         }
     }
-    
+
     .like-btn {
         position: relative;
         max-width: 1280px;
@@ -440,12 +446,12 @@
         &-inn {
             position: absolute;
             bottom: 5px;
-            right: 0;
+            right: 2px;
             width: 85px;
             margin: auto;
             justify-content: flex-end;
             @include ssp {
-                bottom: -10px;
+                bottom: -15px;
             }
             img {
                 margin-right: 6px;
