@@ -683,7 +683,7 @@ img {
   }
 }
 .main .slider-item {
-  width: 560px;
+  width: 480px;
   margin: 20px auto;
   background-color: #ffffff;
   border-radius: 15px;
@@ -1435,6 +1435,10 @@ div {
   #loader {
     width: 250px;
   }
+}
+
+.bnrArea {
+  margin-bottom: 30px;
 }
 
 .news-subpage {
